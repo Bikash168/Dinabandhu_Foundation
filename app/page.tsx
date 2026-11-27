@@ -340,8 +340,8 @@ export default function HomePage() {
                   {/* Photo Banner */}
                   <div className="relative h-40 w-full rounded-tl-[2.5rem] rounded-br-2xl rounded-tr-lg rounded-bl-lg overflow-hidden border border-cream-200 bg-cream-100 shadow-inner">
                     <Image
-                      src="/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg"
-                      alt="Mobile Diagnostic Clinic and Preventive Health Camp"
+                      src="/images/pillars/pillar-health.jpg"
+                      alt="Community Yoga, Meditation and Holistic Health Session"
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -404,8 +404,8 @@ export default function HomePage() {
                   {/* Photo Banner */}
                   <div className="relative h-40 w-full rounded-tr-[2.5rem] rounded-bl-2xl rounded-tl-lg rounded-br-lg overflow-hidden border border-cream-200 bg-cream-100 shadow-inner">
                     <Image
-                      src="/images/drive/photo_47_IMG_20251219_155359.jpg"
-                      alt="Panchayat Youth Afforestation & Eco Restoration"
+                      src="/images/pillars/pillar-environment.jpg"
+                      alt="Rooftop Solar Renewable Energy & Climate Action"
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -468,8 +468,8 @@ export default function HomePage() {
                   {/* Photo Banner */}
                   <div className="relative h-40 w-full rounded-2xl rounded-tr-none overflow-hidden border border-cream-200 bg-cream-100 shadow-inner">
                     <Image
-                      src="/images/drive/photo_38_IMG_20250712_125403.jpg"
-                      alt="Women SHG Skill Development & Vocational Lab"
+                      src="/images/pillars/pillar-skill.jpg"
+                      alt="Technical Academic Library & Skill Development Hub"
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

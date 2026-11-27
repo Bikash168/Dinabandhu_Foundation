@@ -36,38 +36,38 @@ function WhatWeDoContent() {
   const pillarPhotos: Record<string, Array<{ src: string; title: string; subtitle: string }>> = {
     health: [
       {
+        src: '/images/pillars/pillar-health.jpg',
+        title: 'Community Yoga & Holistic Wellness Program',
+        subtitle: 'Mindfulness, physical well-being and daily health awareness across campus & centers'
+      },
+      {
         src: '/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg',
         title: 'Mobile Diagnostic Clinic in Action',
         subtitle: 'Preventive doctor screenings across coastal hamlets'
-      },
-      {
-        src: '/images/drive/photo_6_385022059_819309399981698_5885252841370628177_n.jpg',
-        title: 'Maternal & Community Awareness',
-        subtitle: 'Doorstep preventive guidance & safe water education'
       }
     ],
     environment: [
       {
+        src: '/images/pillars/pillar-environment.jpg',
+        title: 'Solar Clean Energy Rooftop Generation',
+        subtitle: 'Decentralized solar renewable infrastructure and clean power adoption'
+      },
+      {
         src: '/images/drive/photo_47_IMG_20251219_155359.jpg',
         title: 'Youth Mangrove & Forest Afforestation',
         subtitle: 'Restoring natural cyclone protection in coastal belt'
-      },
-      {
-        src: '/images/drive/photo_18_475788975_122138965892513320_4797780344660842673_n.jpg',
-        title: 'Indigenous Sapling Distribution',
-        subtitle: 'Vermicomposting workshops for smallholder farmers'
       }
     ],
     skills: [
       {
+        src: '/images/pillars/pillar-skill.jpg',
+        title: 'Academic Technical Library & Higher Skill Hub',
+        subtitle: 'State-of-the-art educational infrastructure empowering students with industry knowledge'
+      },
+      {
         src: '/images/drive/photo_38_IMG_20250712_125403.jpg',
         title: 'Women SHG Skill & Stitching Hub',
         subtitle: 'Garment manufacturing & self-reliance training'
-      },
-      {
-        src: '/images/drive/photo_43_IMG_20250712_134816.jpg',
-        title: 'Technical Hands-on Vocational Lab',
-        subtitle: 'Practical trade & electrical skilling with industry equipment'
       }
     ]
   };

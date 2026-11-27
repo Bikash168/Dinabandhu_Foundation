@@ -11,6 +11,36 @@ export interface GalleryPhoto {
 
 export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
+    id: 'photo-yoga',
+    src: '/images/pillars/pillar-health.jpg',
+    title: 'Community Yoga, Meditation & Holistic Health Program',
+    category: 'health',
+    categoryLabel: 'Public Health',
+    location: 'Bhubaneswar Campus & Field Centers',
+    date: 'Wellness Initiative',
+    description: 'Promoting holistic health, stress management, and daily physical well-being through guided yoga and mindfulness sessions.'
+  },
+  {
+    id: 'photo-solar',
+    src: '/images/pillars/pillar-environment.jpg',
+    title: 'Rooftop Solar Renewable Energy Clean Power Array',
+    category: 'environment',
+    categoryLabel: 'Environment',
+    location: 'Academic Campus & Green Hub',
+    date: 'Clean Energy Track',
+    description: 'Harnessing rooftop solar power for sustainable campus operations and imparting green solar skills to youth.'
+  },
+  {
+    id: 'photo-library',
+    src: '/images/pillars/pillar-skill.jpg',
+    title: 'Higher Technical Education & Academic Library Hub',
+    category: 'skilling',
+    categoryLabel: 'Skill Development',
+    location: 'Bhubaneswar Academic Wing',
+    date: 'Educational Wing',
+    description: 'Comprehensive research and engineering library infrastructure supporting technical students with world-class books and journals.'
+  },
+  {
     id: 'photo-1',
     src: '/images/drive/photo_38_IMG_20250712_125403.jpg',
     title: 'Women SHG Tailoring & Handicraft Workshop',
