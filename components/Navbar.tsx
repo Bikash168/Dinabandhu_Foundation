@@ -21,6 +21,7 @@ import {
   GraduationCap
 } from 'lucide-react';
 import { FOUNDATION_META, PILLARS } from '@/data/foundationData';
+import SocialIcons from './SocialIcons';
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -50,8 +51,34 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Top Utility Bar with Trust Info, Email & Social Media Icons */}
+      <div className="w-full bg-brand-950 text-cream-200 border-b border-brand-900 py-1.5 px-3 sm:px-6 lg:px-8 text-[11px] sm:text-xs">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 sm:gap-4 truncate">
+            <span className="flex items-center gap-1 font-semibold text-amber-300">
+              <Award className="w-3.5 h-3.5 flex-shrink-0" />
+              <span className="truncate">EST. 1999 • Registered Trust • 12AA & 80G Certified</span>
+            </span>
+            <span className="hidden md:inline text-cream-400">|</span>
+            <span className="hidden md:inline text-cream-300">Bhubaneswar, Odisha</span>
+            <span className="hidden lg:inline text-cream-400">|</span>
+            <a href={`mailto:${FOUNDATION_META.email}`} className="hidden lg:inline hover:text-white transition text-cream-300">
+              {FOUNDATION_META.email}
+            </a>
+          </div>
+
+          {/* Social Media Follow Icons in Top Utility Bar */}
+          <div className="flex items-center gap-2 flex-shrink-0">
+            <span className="hidden sm:inline text-[10px] text-cream-300 uppercase tracking-wider font-semibold">
+              Follow Us:
+            </span>
+            <SocialIcons variant="topbar" />
+          </div>
+        </div>
+      </div>
+
       {/* Sticky Main Header matching user reference screenshot in Terracotta & Cream theme */}
-      <header className="w-full sticky top-0 z-40 bg-white/95 backdrop-blur-md border-t-4 border-brand-800 shadow-md">
+      <header className="w-full sticky top-0 z-40 bg-white/95 backdrop-blur-md border-t-2 border-brand-800 shadow-md">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
             
@@ -484,6 +511,14 @@ export default function Navbar() {
               <Clock className="w-3.5 h-3.5 text-brand-700 flex-shrink-0" />
               <span>Mon–Sat | 10:00 AM – 6:00 PM IST</span>
             </p>
+          </div>
+
+          {/* Social Media Links in Mobile Drawer */}
+          <div className="pt-3 border-t border-cream-200">
+            <span className="text-[10px] uppercase font-bold tracking-wider text-cream-800 block mb-2">
+              Connect With Us:
+            </span>
+            <SocialIcons variant="drawer" />
           </div>
         </div>
       </aside>

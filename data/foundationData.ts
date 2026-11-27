@@ -33,6 +33,52 @@ export interface District {
   keyWork: string;
 }
 
+export interface SocialLink {
+  name: string;
+  url: string;
+  handle: string;
+  icon: 'Facebook' | 'Instagram' | 'Linkedin' | 'Twitter' | 'Youtube';
+  ariaLabel: string;
+}
+
+export const SOCIAL_LINKS: SocialLink[] = [
+  {
+    name: "Facebook",
+    url: "https://facebook.com/DinabandhuFoundation",
+    handle: "@DinabandhuFoundation",
+    icon: "Facebook",
+    ariaLabel: "Follow Dinabandhu Foundation on Facebook"
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/dinabandhufoundation",
+    handle: "@dinabandhufoundation",
+    icon: "Instagram",
+    ariaLabel: "Follow Dinabandhu Foundation on Instagram"
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/company/dinabandhu-foundation",
+    handle: "Dinabandhu Foundation",
+    icon: "Linkedin",
+    ariaLabel: "Connect with Dinabandhu Foundation on LinkedIn"
+  },
+  {
+    name: "YouTube",
+    url: "https://youtube.com/@DinabandhuFoundation",
+    handle: "Dinabandhu Foundation",
+    icon: "Youtube",
+    ariaLabel: "Watch Dinabandhu Foundation documentaries on YouTube"
+  },
+  {
+    name: "X (Twitter)",
+    url: "https://twitter.com/DinabandhuTrust",
+    handle: "@DinabandhuTrust",
+    icon: "Twitter",
+    ariaLabel: "Follow Dinabandhu Foundation on X (Twitter)"
+  }
+];
+
 export const FOUNDATION_META = {
   name: "Dinabandhu Foundation",
   fullName: "Dinabandhu Foundation for Educational Research and Socio Economic Development",

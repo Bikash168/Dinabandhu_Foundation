@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, Phone, MapPin, Award, CheckCircle, ExternalLink, ArrowRight, Heart } from 'lucide-react';
 import { FOUNDATION_META } from '@/data/foundationData';
+import SocialIcons from './SocialIcons';
 
 export default function Footer() {
   return (
@@ -76,6 +77,14 @@ export default function Footer() {
               <span className="bg-brand-900/60 border border-brand-800 text-cream-200 px-2 py-0.5 rounded">
                 Bhubaneswar Jurisdiction
               </span>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="pt-3 border-t border-brand-900/80 space-y-2">
+              <span className="text-[11px] font-bold tracking-wider text-cream-300 uppercase block">
+                Connect With Us On Social Media:
+              </span>
+              <SocialIcons variant="footer" />
             </div>
           </div>
 

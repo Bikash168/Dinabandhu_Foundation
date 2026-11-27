@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import { FOUNDATION_META } from '@/data/foundationData';
+import SocialIcons from '@/components/SocialIcons';
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -133,6 +134,22 @@ export default function ContactPage() {
                       <span>Section 12AA & 80G Certified Non-Profit Trust</span>
                     </div>
                   </div>
+                </div>
+
+                {/* Connect on Social Media */}
+                <div className="bg-white p-5 sm:p-6 rounded-3xl border-2 border-cream-200 shadow-lg space-y-4">
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-brand-800 bg-cream-100 px-3 py-1 rounded-full border border-cream-200">
+                      OFFICIAL CHANNELS
+                    </span>
+                    <h4 className="text-base sm:text-lg font-bold text-brand-950 mt-2">
+                      Connect on Social Media
+                    </h4>
+                    <p className="text-xs text-cream-700 mt-0.5">
+                      Follow our ongoing health camps, tree plantations, and student stories across Odisha.
+                    </p>
+                  </div>
+                  <SocialIcons variant="card" />
                 </div>
               </ScrollReveal>
             </div>

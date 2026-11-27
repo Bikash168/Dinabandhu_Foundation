@@ -26,6 +26,7 @@ import {
 import ScrollReveal from '@/components/ScrollReveal';
 import { FOUNDATION_META } from '@/data/foundationData';
 import { GALLERY_PHOTOS, GalleryPhoto } from '@/data/galleryImages';
+import SocialIcons from '@/components/SocialIcons';
 
 function MediaCornerContent() {
   const searchParams = useSearchParams();
@@ -328,6 +329,24 @@ function MediaCornerContent() {
                     </div>
                   </ScrollReveal>
                 ))}
+              </div>
+
+              {/* Social Channels Live Feed Banner */}
+              <div className="bg-white rounded-3xl p-6 sm:p-8 border-2 border-cream-200 shadow-md flex flex-col sm:flex-row items-center justify-between gap-4 mt-6">
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-brand-800 bg-cream-100 px-3 py-1 rounded-full border border-cream-200">
+                    REAL-TIME UPDATES
+                  </span>
+                  <h4 className="text-base sm:text-lg font-bold text-brand-950 mt-1.5">
+                    Follow Our Ground Operations On Social Media
+                  </h4>
+                  <p className="text-xs text-cream-700 mt-0.5">
+                    Live broadcasts from medical vans, sapling counts, and trainee placements updated weekly.
+                  </p>
+                </div>
+                <div className="flex-shrink-0">
+                  <SocialIcons variant="footer" />
+                </div>
               </div>
             </div>
           )}
