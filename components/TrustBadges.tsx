@@ -30,24 +30,24 @@ export default function TrustBadges() {
   ];
 
   return (
-    <div className="w-full bg-slate-50 border-y border-slate-200 py-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="w-full bg-slate-50 border-y border-slate-200 py-4 sm:py-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
           {badges.map((b, idx) => {
             const Icon = b.icon;
             return (
               <div
                 key={idx}
-                className="flex items-center gap-3.5 p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:shadow-md transition group"
+                className="flex items-center gap-2.5 sm:gap-3.5 p-2.5 sm:p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:shadow-md transition group"
               >
-                <div className={`p-2.5 rounded-lg border ${b.color} flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                  <Icon className="w-5 h-5" />
+                <div className={`p-2 sm:p-2.5 rounded-lg border ${b.color} flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                  <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                <div className="min-w-0">
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug truncate">
                     {b.title}
                   </h4>
-                  <p className="text-[11px] text-slate-500 mt-0.5">
+                  <p className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 line-clamp-1">
                     {b.subtitle}
                   </p>
                 </div>
