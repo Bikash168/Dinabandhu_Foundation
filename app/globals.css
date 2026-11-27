@@ -30,12 +30,99 @@ body {
   background: #64748b;
 }
 
+/* Custom Shape Classes - moving beyond repetitive rectangle cards */
+.shape-leaf-emerald {
+  border-radius: 3.5rem 0.75rem 3.5rem 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shape-leaf-emerald:hover {
+  border-radius: 0.75rem 3.5rem 0.75rem 3.5rem;
+}
+
+.shape-leaf-blue {
+  border-radius: 0.75rem 3.5rem 0.75rem 3.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shape-leaf-blue:hover {
+  border-radius: 3.5rem 0.75rem 3.5rem 0.75rem;
+}
+
+.shape-shield {
+  border-radius: 3rem 1rem 3rem 1rem;
+}
+
+.shape-hex-tag {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+
+.shape-chamfered {
+  clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%);
+}
+
+.shape-ticket-stub {
+  background: radial-gradient(circle at 0 50%, transparent 12px, white 13px),
+              radial-gradient(circle at 100% 50%, transparent 12px, white 13px);
+  background-size: 51% 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+.shape-capsule {
+  border-radius: 9999px;
+}
+
+.shape-scalloped {
+  border-radius: 2.5rem 0.5rem 2.5rem 0.5rem;
+}
+
+.shape-scroll-arch {
+  border-radius: 2rem 2rem 0.5rem 0.5rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* Wave & Asymmetric Section Dividers */
+.wave-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* Gradient shimmer border */
+.animated-gradient-border {
+  position: relative;
+  background: linear-gradient(60deg, #3b82f6, #10b981, #f59e0b, #3b82f6);
+  background-size: 300% 300%;
+  animation: shimmer 6s ease infinite;
+}
+
+/* Scroll reveal utility states */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .gradient-header {
   background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
   border: 1px solid rgba(226, 232, 240, 0.8);
 }

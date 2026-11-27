@@ -11,12 +11,13 @@ import {
   GraduationCap, 
   CheckCircle2, 
   Quote, 
-  ArrowRight,
-  Target,
-  Award,
-  Globe2,
-  Users
+  ArrowRight, 
+  Target, 
+  Award, 
+  Globe2, 
+  Users 
 } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 import { UN_SDGS } from '@/data/foundationData';
 
 export default function ImpactPage() {
@@ -70,230 +71,242 @@ export default function ImpactPage() {
     : stories.filter(s => s.category === selectedCategory);
 
   return (
-    <div className="w-full">
-      {/* Header Banner */}
-      <section className="bg-brand-950 text-white py-16 sm:py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+    <div className="w-full overflow-x-hidden">
+      
+      {/* 1. Header Banner */}
+      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-slate-900 text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none animate-float-slow" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl space-y-4">
-            <span className="text-amber-400 font-semibold tracking-wider text-xs uppercase bg-white/10 px-3.5 py-1.5 rounded-full border border-white/10">
-              IMPACT STORIES & RESULTS
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-              Real Lives Changed, Real Communities Transformed
-            </h1>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              Every young person in Odisha deserves a fair chance to build a good life. That simple belief is what gets us up and moving every single day.
-            </p>
-          </div>
+          <ScrollReveal animation="fade-down">
+            <div className="max-w-3xl space-y-3 sm:space-y-4">
+              <span className="text-amber-400 font-semibold tracking-wider text-xs uppercase bg-white/10 px-3.5 py-1.5 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>IMPACT STORIES & RESULTS</span>
+              </span>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
+                Real Lives Changed, Real Communities Transformed
+              </h1>
+              <p className="text-xs sm:text-base md:text-lg text-slate-300 leading-relaxed">
+                Every young person in Odisha deserves a fair chance to build a good life. That simple belief is what gets us up and moving every single day.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Core Narrative Section */}
-      <section className="py-16 bg-white border-b border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-          <div className="p-8 bg-blue-50/70 border border-blue-200 rounded-3xl space-y-4 text-slate-700 leading-relaxed text-sm sm:text-base">
-            <h2 className="text-2xl font-bold text-brand-950">
-              The Journey of Youth Skilling & Sustainable Hope
-            </h2>
-            <p>
-              Across our state, there are so many young men and women who are full of talent and energy, but they don&apos;t always get the right chance or the right guidance. Some live in small villages, some come from families that struggle to make ends meet, and some have simply never been shown what is possible. <strong>We started our work to change that.</strong>
-            </p>
-            <p>
-              So far, we have helped <strong>more than 2,000 young people across Odisha learn green skills</strong>. These are hands-on skills that open the door to real work, such as using clean energy, saving water, managing waste, and farming in ways that are kind to the earth. We have trained young men and young women side by side, because we believe that progress is only real when everyone moves forward together.
-            </p>
-            <p>
-              The change we see is not just on paper. We see it in a young woman who now earns her own money and speaks with confidence at home. We see it in a young man who no longer has to leave his village to find work. We see families eating better, living better, and feeling hopeful about tomorrow. <strong>This is what a better quality of life really looks like.</strong>
-            </p>
-          </div>
+      {/* 2. Core Narrative in Asymmetric Parchment Shape */}
+      <section className="py-10 sm:py-16 bg-white border-b border-slate-200">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal animation="zoom-in">
+            <div className="p-6 sm:p-10 bg-gradient-to-br from-blue-50/70 via-indigo-50/40 to-white border-2 border-blue-200 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl shadow-lg space-y-4 text-slate-700 leading-relaxed text-xs sm:text-base relative overflow-hidden">
+              <div className="w-32 h-32 bg-blue-500/5 rounded-full absolute -top-10 -right-10 pointer-events-none" />
+              <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
+                The Journey of Youth Skilling & Sustainable Hope
+              </h2>
+              <p>
+                Across our state, there are so many young men and women who are full of talent and energy, but they don&apos;t always get the right chance or the right guidance. Some live in small villages, some come from families that struggle to make ends meet, and some have simply never been shown what is possible. <strong>We started our work to change that.</strong>
+              </p>
+              <p>
+                So far, we have helped <strong>more than 2,000 young people across Odisha learn green skills</strong>. These are hands-on skills that open the door to real work, such as using clean energy, saving water, managing waste, and farming in ways that are kind to the earth. We have trained young men and young women side by side, because we believe that progress is only real when everyone moves forward together.
+              </p>
+              <p>
+                The change we see is not just on paper. We see it in a young woman who now earns her own money and speaks with confidence at home. We see it in a young man who no longer has to leave his village to find work. We see families eating better, living better, and feeling hopeful about tomorrow. <strong>This is what a better quality of life really looks like.</strong>
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* UN SDGs Alignment Grid */}
-      <section className="py-20 bg-slate-50">
+      {/* 3. UN SDGs Alignment Grid with Token Shapes */}
+      <section className="py-12 sm:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
-            <span className="text-xs font-bold tracking-wider text-purple-700 uppercase bg-purple-50 px-3.5 py-1.5 rounded-full border border-purple-200">
-              UNITED NATIONS FRAMEWORK
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Guided by Sustainable Development Goals (SDGs)
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600">
-              Every step we take connects to globally recognized indicators of social progress and ecological resilience.
-            </p>
-          </div>
+          <ScrollReveal animation="fade-up">
+            <div className="text-center max-w-3xl mx-auto space-y-2 sm:space-y-3 mb-10 sm:mb-14">
+              <span className="text-xs font-bold tracking-wider text-purple-700 uppercase bg-purple-50 px-3.5 py-1.5 rounded-full border border-purple-200">
+                UNITED NATIONS FRAMEWORK
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                Guided by Sustainable Development Goals (SDGs)
+              </h2>
+              <p className="text-xs sm:text-base text-slate-600">
+                Every step we take connects to globally recognized indicators of social progress and ecological resilience.
+              </p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {UN_SDGS.map((sdg, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between"
-              >
-                <div className="space-y-4">
-                  <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-black text-sm shadow-md"
-                    style={{ backgroundColor: sdg.color }}
-                  >
-                    {sdg.sdg}
+              <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                <div className="bg-white rounded-3xl rounded-tr-sm p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full group">
+                  <div className="space-y-4">
+                    <div
+                      className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-black text-sm shadow-md group-hover:scale-110 transition-transform"
+                      style={{ backgroundColor: sdg.color }}
+                    >
+                      {sdg.sdg}
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                      {sdg.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      {sdg.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900">
-                    {sdg.title}
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-slate-500">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>Dinabandhu Core Metric</span>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* 2036 & 2047 Vision Banner as Ceremonial Pavilion */}
+          <ScrollReveal animation="zoom-in" delay={150}>
+            <div id="vision2036" className="mt-12 sm:mt-16 bg-gradient-to-r from-brand-950 via-slate-900 to-indigo-950 rounded-[2.5rem] rounded-tr-none p-6 sm:p-12 text-white shadow-2xl border border-slate-800">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+                <div className="lg:col-span-8 space-y-3">
+                  <span className="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+                    COMMITTED TO ODISHA&apos;S CENTENARY & INDIA&apos;S INDEPENDENCE CENTENARY
+                  </span>
+                  <h3 className="text-xl sm:text-3xl font-extrabold text-white mt-1">
+                    Developed Odisha by 2036 • Viksit Bharat by 2047
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    {sdg.description}
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    We share a big dream for our home. We want to be part of building a <strong>Developed Odisha by 2036</strong> and a <strong>Viksit Bharat by 2047</strong>. We know this dream cannot come true through buildings and roads alone. It will come true through people, and especially through young people who are skilled, confident, and ready to lead.
                   </p>
                 </div>
 
-                <div className="pt-4 mt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-slate-500">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Dinabandhu Core Metric</span>
+                <div className="lg:col-span-4 flex flex-col gap-3">
+                  <Link
+                    href="/get-involved"
+                    className="w-full text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-full shadow-lg transition-all text-xs sm:text-sm transform hover:-translate-y-0.5"
+                  >
+                    Walk With Us
+                  </Link>
+                  <Link
+                    href="/csr-partnerships"
+                    className="w-full text-center bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 rounded-full border border-white/20 transition-all text-xs sm:text-sm"
+                  >
+                    Partner for Impact
+                  </Link>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          </ScrollReveal>
 
-          {/* 2036 & 2047 Vision Banner */}
-          <div id="vision2036" className="mt-16 bg-gradient-to-r from-brand-950 via-slate-900 to-indigo-950 rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-slate-800">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8 space-y-3">
-                <span className="text-xs font-bold text-amber-400 uppercase tracking-widest">
-                  COMMITTED TO ODISHA&apos;S CENTENARY & INDIA&apos;S INDEPENDENCE CENTENARY
+        </div>
+      </section>
+
+      {/* 4. Stories of Change in Asymmetric Quote Shells */}
+      <section className="py-12 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <ScrollReveal animation="fade-up">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
+              <div>
+                <span className="text-xs font-bold tracking-wider text-emerald-700 uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                  EVIDENCE & DATA
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                  Developed Odisha by 2036 • Viksit Bharat by 2047
-                </h3>
-                <p className="text-sm text-slate-300 leading-relaxed">
-                  We share a big dream for our home. We want to be part of building a <strong>Developed Odisha by 2036</strong> and a <strong>Viksit Bharat by 2047</strong>. We know this dream cannot come true through buildings and roads alone. It will come true through people, and especially through young people who are skilled, confident, and ready to lead.
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+                  Grassroots Stories of Change
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                  Real accounts from our participants across Odisha districts.
                 </p>
               </div>
 
-              <div className="lg:col-span-4 flex flex-col gap-3">
-                <Link
-                  href="/get-involved"
-                  className="w-full text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-xl shadow-lg transition"
+              {/* Category Filter Pills */}
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setSelectedCategory('all')}
+                  className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
+                    selectedCategory === 'all'
+                      ? 'bg-brand-900 text-white shadow-md'
+                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  }`}
                 >
-                  Walk With Us
-                </Link>
-                <Link
-                  href="/csr-partnerships"
-                  className="w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-medium px-6 py-3 rounded-xl border border-slate-700 transition"
+                  All Stories
+                </button>
+                <button
+                  onClick={() => setSelectedCategory('green-skills')}
+                  className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
+                    selectedCategory === 'green-skills'
+                      ? 'bg-emerald-600 text-white shadow-md'
+                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  }`}
                 >
-                  Partner for Impact
-                </Link>
+                  Green Skills & Energy
+                </button>
+                <button
+                  onClick={() => setSelectedCategory('women')}
+                  className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
+                    selectedCategory === 'women'
+                      ? 'bg-amber-600 text-white shadow-md'
+                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  }`}
+                >
+                  Women SHGs
+                </button>
+                <button
+                  onClick={() => setSelectedCategory('health')}
+                  className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
+                    selectedCategory === 'health'
+                      ? 'bg-blue-600 text-white shadow-md'
+                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  }`}
+                >
+                  Preventive Health
+                </button>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
-        </div>
-      </section>
-
-      {/* Segregated Stories of Change */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
-            <div>
-              <span className="text-xs font-bold tracking-wider text-emerald-700 uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-                EVIDENCE & DATA
-              </span>
-              <h2 className="text-3xl font-extrabold text-slate-900 mt-2">
-                Grassroots Stories of Change
-              </h2>
-              <p className="text-sm text-slate-600 mt-1">
-                Real accounts from our participants across Odisha districts.
-              </p>
-            </div>
-
-            {/* Category Filter */}
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setSelectedCategory('all')}
-                className={`px-4 py-2 rounded-lg text-xs font-bold transition ${
-                  selectedCategory === 'all'
-                    ? 'bg-brand-900 text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                }`}
-              >
-                All Stories
-              </button>
-              <button
-                onClick={() => setSelectedCategory('green-skills')}
-                className={`px-4 py-2 rounded-lg text-xs font-bold transition ${
-                  selectedCategory === 'green-skills'
-                    ? 'bg-emerald-600 text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                }`}
-              >
-                Green Skills & Energy
-              </button>
-              <button
-                onClick={() => setSelectedCategory('women')}
-                className={`px-4 py-2 rounded-lg text-xs font-bold transition ${
-                  selectedCategory === 'women'
-                    ? 'bg-amber-600 text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                }`}
-              >
-                Women SHGs
-              </button>
-              <button
-                onClick={() => setSelectedCategory('health')}
-                className={`px-4 py-2 rounded-lg text-xs font-bold transition ${
-                  selectedCategory === 'health'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                }`}
-              >
-                Preventive Health
-              </button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {filteredStories.map((story, i) => (
-              <div
-                key={i}
-                className="bg-slate-50 rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between"
-              >
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-brand-800 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
-                      {story.district} District
-                    </span>
-                    <span className="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded">
-                      {story.sdg}
-                    </span>
+              <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                <div className="h-full bg-slate-50/70 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl p-6 sm:p-8 border-2 border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold uppercase tracking-wider text-brand-800 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+                        {story.district} District
+                      </span>
+                      <span className="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">
+                        {story.sdg}
+                      </span>
+                    </div>
+
+                    <h3 className="text-lg font-bold text-slate-900 leading-snug group-hover:text-brand-900 transition-colors">
+                      {story.title}
+                    </h3>
+
+                    <div className="text-xs font-semibold text-emerald-700">
+                      Beneficiary: {story.name} • {story.trade}
+                    </div>
+
+                    <blockquote className="text-xs sm:text-sm text-slate-600 italic border-l-2 border-brand-500 pl-3 py-1 leading-relaxed">
+                      &ldquo;{story.quote}&rdquo;
+                    </blockquote>
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-900 leading-snug">
-                    {story.title}
-                  </h3>
-
-                  <div className="text-xs font-semibold text-emerald-700">
-                    Beneficiary: {story.name} • {story.trade}
+                  <div className="pt-4 mt-6 border-t border-slate-200">
+                    <div className="p-3 bg-white rounded-xl border border-slate-200 flex items-center gap-2 shadow-sm">
+                      <Award className="w-4 h-4 text-amber-500 flex-shrink-0" />
+                      <span className="text-xs font-bold text-slate-800">
+                        {story.impactMetric}
+                      </span>
+                    </div>
                   </div>
-
-                  <blockquote className="text-xs sm:text-sm text-slate-600 italic border-l-2 border-brand-500 pl-3 py-1 leading-relaxed">
-                    &ldquo;{story.quote}&rdquo;
-                  </blockquote>
                 </div>
-
-                <div className="pt-4 mt-6 border-t border-slate-200">
-                  <div className="p-3 bg-white rounded-xl border border-slate-200 flex items-center gap-2">
-                    <Award className="w-4 h-4 text-amber-500 flex-shrink-0" />
-                    <span className="text-xs font-bold text-slate-800">
-                      {story.impactMetric}
-                    </span>
-                  </div>
-                </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
 
         </div>
       </section>
+
     </div>
   );
 }

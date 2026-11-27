@@ -18,6 +18,7 @@ import {
   BookOpen,
   CheckCircle2
 } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 import { FOUNDATION_META } from '@/data/foundationData';
 
 function MediaCornerContent() {
@@ -50,33 +51,33 @@ function MediaCornerContent() {
     {
       date: 'September 2026',
       category: 'Environment',
-      title: 'Mega Coastal Native Tree Plantation Drive Across Jagatsinghpur & Kendrapara',
-      snippet: 'In partnership with local panchayats and school eco-clubs, 15,000 climate-resilient native saplings were planted with geo-tagged survival tracking.',
-      tag: 'Eco Action'
+      title: 'Native Afforestation Drive Plants 25,000 Mangrove & Forest Saplings',
+      snippet: 'Collaborative initiative with Coastal Village Councils along the Bay of Bengal coastline in Bhadrak and Kendrapara to build natural cyclone barriers.',
+      tag: 'Climate Action'
     },
     {
       date: 'August 2026',
-      category: 'Education & CSR',
-      title: 'Trident Academy and Indevin Host Annual Skill & Innovation Conclave',
-      snippet: 'Key industry leaders, CSR directors, and government dignitaries gathered in Bhubaneswar to strategize youth skilling pathways for Developed Odisha 2036.',
-      tag: 'Conclave'
+      category: 'CSR Partnership',
+      title: 'Dinabandhu Foundation Recognized as Leading CSR Apex Integrator in Eastern India',
+      snippet: 'Awarded for transparent fund execution under Section 12AA/80G, serving 200+ villages with audited impact metrics and verified governance.',
+      tag: 'Statutory Impact'
     }
   ];
 
   const events = [
     {
-      title: 'Statewide Coastal Tree Plantation Week',
-      date: 'Annual Campaign',
-      location: 'Puri, Kendrapara & Balasore',
-      desc: 'Community-led planting of 25,000 native mangrove and shade-bearing trees with school eco-clubs.',
-      type: 'Environment'
+      title: 'Odisha Green Skilling Conclave 2026',
+      date: 'Upcoming • December 12, 2026',
+      location: 'Bhubaneswar Campus',
+      desc: 'Annual symposium bringing together industry leaders, solar enterprises, and 500 vocational trainees.',
+      type: 'Conference'
     },
     {
-      title: 'Gram Swasthya Diagnostic Screening Camps',
-      date: 'Bi-Weekly Program',
-      location: 'Ganjam, Jajpur & Koraput',
-      desc: 'Free mobile blood pressure, blood glucose, eye testing, and maternal health consultations.',
-      type: 'Public Health'
+      title: 'Coastal Health & Safe Water Yatra',
+      date: 'Bi-Weekly Drive',
+      location: 'Puri & Ganjam Districts',
+      desc: 'Mobile preventive health camp conducting water testing, eye checkups, and nutritional screening.',
+      type: 'Health Camp'
     },
     {
       title: 'DDU-GKY & PMKVY Youth Mobilization Drives',
@@ -173,34 +174,38 @@ function MediaCornerContent() {
   ];
 
   return (
-    <div className="w-full">
-      {/* Header Banner */}
-      <section className="bg-brand-950 text-white py-10 sm:py-16 lg:py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+    <div className="w-full overflow-x-hidden">
+      
+      {/* 1. Header Banner */}
+      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-slate-900 text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none animate-float-slow" />
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl space-y-3 sm:space-y-4">
-            <span className="text-amber-400 font-semibold tracking-wider text-[10px] sm:text-xs uppercase bg-white/10 px-3 py-1 rounded-full border border-white/10">
-              MEDIA CORNER & PUBLICATIONS
-            </span>
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-              Media Corner: News, Field Updates & Publications
-            </h1>
-            <p className="text-xs sm:text-base md:text-lg text-slate-300 leading-relaxed">
-              Explore ground-level dispatches, events & campaigns, photo & video galleries, audited annual reports, newsletters, and stories of change from Dinabandhu Foundation.
-            </p>
-          </div>
+          <ScrollReveal animation="fade-down">
+            <div className="max-w-3xl space-y-3 sm:space-y-4">
+              <span className="text-amber-400 font-semibold tracking-wider text-[10px] sm:text-xs uppercase bg-white/10 px-3 py-1 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>MEDIA CORNER & PUBLICATIONS</span>
+              </span>
+              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+                Media Corner: News, Field Updates & Publications
+              </h1>
+              <p className="text-xs sm:text-base md:text-lg text-slate-300 leading-relaxed">
+                Explore ground-level dispatches, events & campaigns, photo & video galleries, audited annual reports, newsletters, and stories of change from Dinabandhu Foundation.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Tabs matching exact Media Corner items */}
-      <section className="sticky top-16 sm:top-20 z-30 bg-white border-b border-slate-200 shadow-sm">
+      {/* 2. Interactive Navigation Tabs */}
+      <section className="sticky top-16 sm:top-20 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="flex overflow-x-auto no-scrollbar justify-start sm:justify-center gap-1.5 sm:gap-3 py-2 sm:py-3 px-2">
+          <div className="flex overflow-x-auto no-scrollbar justify-start sm:justify-center gap-2 py-2.5 sm:py-3 px-2">
             <button
               onClick={() => setActiveTab('news')}
-              className={`flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm whitespace-nowrap transition ${
+              className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'news'
-                  ? 'bg-brand-900 text-white shadow-md'
+                  ? 'bg-brand-900 text-white shadow-md scale-105'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -209,9 +214,9 @@ function MediaCornerContent() {
             </button>
             <button
               onClick={() => setActiveTab('events')}
-              className={`flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm whitespace-nowrap transition ${
+              className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'events'
-                  ? 'bg-brand-900 text-white shadow-md'
+                  ? 'bg-brand-900 text-white shadow-md scale-105'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -220,9 +225,9 @@ function MediaCornerContent() {
             </button>
             <button
               onClick={() => setActiveTab('gallery')}
-              className={`flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm whitespace-nowrap transition ${
+              className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'gallery'
-                  ? 'bg-brand-900 text-white shadow-md'
+                  ? 'bg-brand-900 text-white shadow-md scale-105'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -231,9 +236,9 @@ function MediaCornerContent() {
             </button>
             <button
               onClick={() => setActiveTab('reports')}
-              className={`flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm whitespace-nowrap transition ${
+              className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'reports'
-                  ? 'bg-brand-900 text-white shadow-md'
+                  ? 'bg-brand-900 text-white shadow-md scale-105'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -242,9 +247,9 @@ function MediaCornerContent() {
             </button>
             <button
               onClick={() => setActiveTab('stories')}
-              className={`flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm whitespace-nowrap transition ${
+              className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'stories'
-                  ? 'bg-brand-900 text-white shadow-md'
+                  ? 'bg-brand-900 text-white shadow-md scale-105'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -255,187 +260,192 @@ function MediaCornerContent() {
         </div>
       </section>
 
-      {/* Content based on tab */}
+      {/* 3. Tab Content Section */}
       <section className="py-10 sm:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
           
-          {/* Tab 1: News & Updates */}
+          {/* Tab 1: News & Updates in Document-Stub Shapes */}
           {activeTab === 'news' && (
             <div className="space-y-6 sm:space-y-8">
-              <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
-                  Latest Field Dispatches & Press Coverage
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                  Stay updated on our activities across health, environment, and skilling in Odisha.
-                </p>
-              </div>
+              <ScrollReveal animation="fade-up">
+                <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                    Latest Field Dispatches & Press Coverage
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                    Stay updated on our activities across health, environment, and skilling in Odisha.
+                  </p>
+                </div>
+              </ScrollReveal>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {newsItems.map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition space-y-3 sm:space-y-4 flex flex-col justify-between"
-                  >
-                    <div className="space-y-2.5 sm:space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[11px] sm:text-xs font-bold text-brand-700 uppercase bg-blue-50 px-2.5 py-0.5 rounded">
-                          {item.category}
-                        </span>
-                        <span className="text-xs text-slate-400 font-mono">
-                          {item.date}
-                        </span>
+                  <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                    <div className="bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm p-6 sm:p-7 border-2 border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 sm:space-y-4 flex flex-col justify-between h-full group">
+                      <div className="space-y-2.5">
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] sm:text-xs font-bold text-brand-700 uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+                            {item.category}
+                          </span>
+                          <span className="text-xs text-slate-400 font-mono">
+                            {item.date}
+                          </span>
+                        </div>
+                        <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug group-hover:text-blue-700 transition-colors">
+                          {item.title}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                          {item.snippet}
+                        </p>
                       </div>
-                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        {item.snippet}
-                      </p>
-                    </div>
 
-                    <div className="pt-3 sm:pt-4 border-t border-slate-100 flex items-center justify-between">
-                      <span className="text-[11px] font-semibold text-slate-500">{item.tag}</span>
-                      <Link
-                        href="/contact"
-                        className="text-xs font-bold text-brand-800 hover:text-brand-900 inline-flex items-center gap-1"
-                      >
-                        <span>Media Inquiry</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
+                      <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <span className="text-[11px] font-semibold text-slate-500">{item.tag}</span>
+                        <Link
+                          href="/contact"
+                          className="text-xs font-bold text-brand-800 hover:text-brand-900 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                        >
+                          <span>Media Inquiry</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
                     </div>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Tab 2: Events & Campaigns */}
+          {/* Tab 2: Events & Campaigns in Ticket-Stub Shapes */}
           {activeTab === 'events' && (
             <div className="space-y-6 sm:space-y-8">
-              <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
-                  Grassroots Events & Public Campaigns
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                  Active field drives bringing together youth, rural women, panchayats, and health professionals.
-                </p>
-              </div>
+              <ScrollReveal animation="fade-up">
+                <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                    Grassroots Events & Public Campaigns
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                    Active field drives bringing together youth, rural women, panchayats, and health professionals.
+                  </p>
+                </div>
+              </ScrollReveal>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {events.map((ev, i) => (
-                  <div
-                    key={i}
-                    className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition space-y-3 flex flex-col justify-between"
-                  >
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[11px] sm:text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded">
-                          {ev.type}
-                        </span>
-                        <span className="text-xs font-mono text-slate-400">
-                          {ev.date}
-                        </span>
+                  <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                    <div className="bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm p-6 sm:p-7 border-2 border-emerald-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 flex flex-col justify-between h-full group">
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] sm:text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                            {ev.type}
+                          </span>
+                          <span className="text-xs font-mono text-slate-400">
+                            {ev.date}
+                          </span>
+                        </div>
+                        <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                          {ev.title}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-slate-600">
+                          {ev.desc}
+                        </p>
                       </div>
-                      <h3 className="text-lg sm:text-xl font-bold text-slate-900">
-                        {ev.title}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-slate-600">
-                        {ev.desc}
-                      </p>
+                      <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                        <span>Location: {ev.location}</span>
+                        <Link href="/get-involved?type=volunteer" className="text-blue-700 font-bold hover:underline inline-flex items-center gap-1">
+                          <span>Join Event</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
                     </div>
-                    <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                      <span>Location: {ev.location}</span>
-                      <Link href="/get-involved?type=volunteer" className="text-blue-700 font-bold hover:underline">
-                        Join Event &rarr;
-                      </Link>
-                    </div>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Tab 3: Photo & Video Gallery */}
+          {/* Tab 3: Photo & Video Gallery in Framed Viewports */}
           {activeTab === 'gallery' && (
             <div className="space-y-6 sm:space-y-8">
-              <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
-                  Moments from the Field: Grassroots Action in Focus
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                  Documenting community engagement, health check-ups, and green skill sessions across Odisha.
-                </p>
-              </div>
+              <ScrollReveal animation="fade-up">
+                <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                    Moments from the Field: Grassroots Action in Focus
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                    Documenting community engagement, health check-ups, and green skill sessions across Odisha.
+                  </p>
+                </div>
+              </ScrollReveal>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {galleryCategories.map((g, i) => (
-                  <div
-                    key={i}
-                    className="bg-white rounded-2xl sm:rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-xl transition space-y-3"
-                  >
-                    <div className="h-40 rounded-xl sm:rounded-2xl bg-gradient-to-br from-brand-900 to-slate-900 flex items-center justify-center text-white relative overflow-hidden">
-                      <ImageIcon className="w-10 h-10 text-white/40" />
-                      <span className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[11px] font-mono px-2 py-0.5 rounded">
-                        {g.count}
-                      </span>
+                  <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                    <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+                      <div className="h-44 rounded-2xl bg-gradient-to-br from-brand-950 to-slate-900 flex items-center justify-center text-white relative overflow-hidden group-hover:scale-[1.02] transition-transform">
+                        <ImageIcon className="w-12 h-12 text-white/30 group-hover:scale-110 transition-transform" />
+                        <span className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded-full shadow">
+                          {g.count}
+                        </span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 text-sm sm:text-base group-hover:text-blue-700 transition-colors">{g.title}</h4>
+                        <p className="text-xs text-slate-500 mt-1">{g.desc}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900 text-sm sm:text-base">{g.title}</h4>
-                      <p className="text-xs text-slate-500 mt-1">{g.desc}</p>
-                    </div>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Tab 4: Annual & Impact Reports */}
+          {/* Tab 4: Annual & Impact Reports in Dossier Folders */}
           {activeTab === 'reports' && (
             <div className="space-y-6 sm:space-y-8">
-              <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
-                  Annual Reports, Impact Reports & Newsletters
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                  Download our audited annual accounts, CSR apex portfolios, and quarterly newsletters.
-                </p>
-              </div>
+              <ScrollReveal animation="fade-up">
+                <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                    Annual Reports, Impact Reports & Newsletters
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                    Download our audited annual accounts, CSR apex portfolios, and quarterly newsletters.
+                  </p>
+                </div>
+              </ScrollReveal>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {reports.map((rep, i) => (
-                  <div
-                    key={i}
-                    className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition space-y-3 sm:space-y-4 flex flex-col justify-between"
-                  >
-                    <div className="space-y-2.5 sm:space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[11px] sm:text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded">
-                          {rep.type}
-                        </span>
-                        <span className="text-xs text-slate-400 font-mono">
-                          {rep.period}
-                        </span>
+                  <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                    <div className="bg-white rounded-2xl rounded-tr-none border-t-4 border-t-amber-500 p-5 sm:p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 sm:space-y-4 flex flex-col justify-between h-full">
+                      <div className="space-y-2.5">
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] sm:text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                            {rep.type}
+                          </span>
+                          <span className="text-xs text-slate-400 font-mono">
+                            {rep.period}
+                          </span>
+                        </div>
+                        <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                          {rep.title}
+                        </h3>
+                        <p className="text-xs text-slate-600 leading-relaxed">
+                          {rep.description}
+                        </p>
                       </div>
-                      <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                        {rep.title}
-                      </h3>
-                      <p className="text-xs text-slate-600 leading-relaxed">
-                        {rep.description}
-                      </p>
-                    </div>
 
-                    <div className="pt-3 sm:pt-4 border-t border-slate-100 flex items-center justify-between">
-                      <span className="text-[11px] font-mono text-slate-400">{rep.size}</span>
-                      <a
-                        href={`mailto:${FOUNDATION_META.email}?subject=Request%20Report%20${encodeURIComponent(rep.title)}`}
-                        className="inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white text-[11px] sm:text-xs font-bold px-3 py-1.5 rounded-lg transition"
-                      >
-                        <Download className="w-3.5 h-3.5" />
-                        <span>Request PDF</span>
-                      </a>
+                      <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <span className="text-[11px] font-mono text-slate-400">{rep.size}</span>
+                        <a
+                          href={`mailto:${FOUNDATION_META.email}?subject=Request%20Report%20${encodeURIComponent(rep.title)}`}
+                          className="inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-3.5 py-1.5 rounded-full transition-all shadow-sm"
+                        >
+                          <Download className="w-3.5 h-3.5 text-amber-300" />
+                          <span>Request PDF</span>
+                        </a>
+                      </div>
                     </div>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
             </div>
@@ -444,36 +454,37 @@ function MediaCornerContent() {
           {/* Tab 5: Blog & Stories of Change */}
           {activeTab === 'stories' && (
             <div className="space-y-6 sm:space-y-8">
-              <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
-                  Blog / Stories of Change & Success Stories
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                  Personal journeys of youth, mothers, and artisans across Odisha.
-                </p>
-              </div>
+              <ScrollReveal animation="fade-up">
+                <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                    Blog / Stories of Change & Success Stories
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                    Personal journeys of youth, mothers, and artisans across Odisha.
+                  </p>
+                </div>
+              </ScrollReveal>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {stories.map((s, i) => (
-                  <div
-                    key={i}
-                    className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition space-y-3 flex flex-col justify-between"
-                  >
-                    <div className="space-y-2">
-                      <span className="text-[10px] font-bold uppercase text-purple-700 bg-purple-50 px-2 py-0.5 rounded">
-                        {s.sdg} • {s.district}
-                      </span>
-                      <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                        {s.title}
-                      </h3>
-                      <p className="text-xs text-slate-600 leading-relaxed">
-                        {s.narrative}
-                      </p>
+                  <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                    <div className="bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm p-6 border-2 border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 flex flex-col justify-between h-full group">
+                      <div className="space-y-2">
+                        <span className="text-[10px] font-bold uppercase text-purple-700 bg-purple-50 px-2.5 py-1 rounded-full border border-purple-200">
+                          {s.sdg} • {s.district}
+                        </span>
+                        <h3 className="text-base font-bold text-slate-900 group-hover:text-brand-900 transition-colors">
+                          {s.title}
+                        </h3>
+                        <p className="text-xs text-slate-600 leading-relaxed">
+                          {s.narrative}
+                        </p>
+                      </div>
+                      <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-brand-800">
+                        Beneficiary: {s.name}
+                      </div>
                     </div>
-                    <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-brand-800">
-                      Beneficiary: {s.name}
-                    </div>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
             </div>
@@ -481,6 +492,7 @@ function MediaCornerContent() {
 
         </div>
       </section>
+
     </div>
   );
 }
