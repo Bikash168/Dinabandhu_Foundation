@@ -70,7 +70,7 @@ export default function WhereWeWorkPage() {
       </section>
 
       {/* Map Showcase & Interactive District Explorer */}
-      <section className="py-10 sm:py-20 bg-slate-50">
+      <section id="districts" className="py-10 sm:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
@@ -195,7 +195,7 @@ export default function WhereWeWorkPage() {
               </div>
 
               {/* Beneficiary Profile Spotlight */}
-              <div className="bg-slate-900 text-white p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg space-y-3 sm:space-y-4">
+              <div id="beneficiaries" className="bg-slate-900 text-white p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg space-y-3 sm:space-y-4">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-amber-400">
                   BENEFICIARY PROFILE
                 </span>
@@ -232,6 +232,86 @@ export default function WhereWeWorkPage() {
 
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Training Centres Section */}
+      <section id="training-centres" className="py-12 sm:py-20 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto space-y-2 sm:space-y-3 mb-10 sm:mb-14">
+            <span className="text-[10px] sm:text-xs font-bold tracking-wider text-amber-700 uppercase bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+              SKILL HUBS & HEALTH UNITS
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Training Centres & Field Action Hubs
+            </h2>
+            <p className="text-xs sm:text-base text-slate-600">
+              Strategically placed across Odisha to ensure practical skill imparting and last-mile preventive diagnostic outreach.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <span className="text-[10px] font-bold uppercase text-brand-700 bg-blue-50 px-2 py-0.5 rounded">Central Apex Hub</span>
+              <h4 className="font-bold text-slate-900 text-base">Bhubaneswar Tech Campus</h4>
+              <p className="text-xs text-slate-600">Advanced high-tech skilling labs, biotechnology research, and CSR command center.</p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <span className="text-[10px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Vocational Training</span>
+              <h4 className="font-bold text-slate-900 text-base">Bhadrak SkillEM Center</h4>
+              <p className="text-xs text-slate-600">DDU-GKY and PMKVY trade classrooms, sewing and electrical workshops, computer lab.</p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <span className="text-[10px] font-bold uppercase text-amber-700 bg-amber-50 px-2 py-0.5 rounded">Mobile Unit</span>
+              <h4 className="font-bold text-slate-900 text-base">Southern Coastal Health Van</h4>
+              <p className="text-xs text-slate-600">Mobile preventive medical diagnostics, water quality testing, and maternal health vans.</p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <span className="text-[10px] font-bold uppercase text-purple-700 bg-purple-50 px-2 py-0.5 rounded">Highland Livelihoods</span>
+              <h4 className="font-bold text-slate-900 text-base">Koraput Tribal Agro Hub</h4>
+              <p className="text-xs text-slate-600">Agroforestry training, organic composting workshops, and native sapling distribution.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partner Institutions Section */}
+      <section id="institutions" className="py-12 sm:py-20 bg-slate-900 text-white border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto space-y-2 sm:space-y-3 mb-10 sm:mb-14">
+            <span className="text-[10px] sm:text-xs font-bold tracking-wider text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+              INSTITUTIONAL SYNERGY
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Partner Institutions Under Dinabandhu Foundation
+            </h2>
+            <p className="text-xs sm:text-base text-slate-300">
+              Three pillars of higher education, vocational skilling, and grassroots CSR working together.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-3">
+              <span className="text-xs font-semibold text-blue-400 uppercase">Higher Education</span>
+              <h3 className="text-xl font-bold text-white">Trident Academy of Technology</h3>
+              <p className="text-xs text-slate-300">Flagship technical college offering UG and PG programs in Engineering, Biotech & Computer Applications (10,000+ graduates).</p>
+            </div>
+
+            <div className="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-3">
+              <span className="text-xs font-semibold text-emerald-400 uppercase">Skilling Arm</span>
+              <h3 className="text-xl font-bold text-white">SkillEM</h3>
+              <p className="text-xs text-slate-300">Central and State government vocational schemes implementation (DDU-GKY, PMKVY) with verified industry job placement linkages.</p>
+            </div>
+
+            <div className="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-3">
+              <span className="text-xs font-semibold text-amber-400 uppercase">CSR Apex Integrator</span>
+              <h3 className="text-xl font-bold text-white">Indevin</h3>
+              <p className="text-xs text-slate-300">Corporate social responsibility vertical managing village health camps, climate afforestation, and transparent impact audits.</p>
+            </div>
           </div>
         </div>
       </section>

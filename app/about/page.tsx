@@ -241,14 +241,14 @@ export default function AboutPage() {
           </div>
 
           {/* Legal Status & Registrations */}
-          <div className="mt-14 p-8 bg-slate-900 text-white rounded-3xl shadow-xl">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div id="trust" className="mt-14 p-6 sm:p-8 bg-slate-900 text-white rounded-2xl sm:rounded-3xl shadow-xl">
+            <div id="legal" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-8 space-y-3">
-                <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">
+                <span className="text-[10px] sm:text-xs font-bold text-amber-400 uppercase tracking-wider">
                   STATUTORY COMPLIANCE & LEGAL CONSTITUTION
                 </span>
-                <h3 className="text-2xl font-bold">
-                  The Trust Constitution & Registrations
+                <h3 className="text-xl sm:text-2xl font-bold">
+                  The Trust Constitution, Legal Status & Registrations
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                   Mrs. Shovana Devi formed <strong>Dinabandhu Foundation for Educational Research and Socio Economic Development</strong> as a registered trust under the <strong>Indian Trust Act, 1882</strong>, by the registering authority at Bhubaneswar. She appointed Dr. B. B. Panigrahi and Mrs. Smita Panigrahi as trustees. The trust is registered under <strong>Sections 12AA and 80G</strong> of the Indian Income-tax Act, 1961.
@@ -272,6 +272,65 @@ export default function AboutPage() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Our Team Section */}
+      <section id="team" className="py-12 sm:py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto space-y-2 sm:space-y-3 mb-10 sm:mb-14">
+            <span className="text-[10px] sm:text-xs font-bold tracking-wider text-blue-700 uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+              OUR TEAM
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Dedicated Team & Field Execution Force
+            </h2>
+            <p className="text-xs sm:text-base text-slate-600">
+              With a dedicated team of 20 professionals across Odisha, our personnel blend academic expertise, technical skills training, and passionate grassroots social work.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2 py-0.5 rounded">
+                Executive Leadership
+              </span>
+              <h4 className="font-bold text-slate-900 text-base">Trustees & Directors</h4>
+              <p className="text-xs text-slate-600">
+                Guiding institutional strategy, higher technical education standards, and transparent governance.
+              </p>
+            </div>
+
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
+                Environment & Afforestation
+              </span>
+              <h4 className="font-bold text-slate-900 text-base">Ecological Specialists</h4>
+              <p className="text-xs text-slate-600">
+                Leading native plantation drives, watershed management, soil conservation, and school eco-clubs.
+              </p>
+            </div>
+
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded">
+                SkillEM Vocational
+              </span>
+              <h4 className="font-bold text-slate-900 text-base">Master Trainers & Mobilizers</h4>
+              <p className="text-xs text-slate-600">
+                Executing DDU-GKY, PMKVY, solar installation, and women SHG trade courses with job linkages.
+              </p>
+            </div>
+
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2 py-0.5 rounded">
+                Health & Outreach
+              </span>
+              <h4 className="font-bold text-slate-900 text-base">Field Health Coordinators</h4>
+              <p className="text-xs text-slate-600">
+                Managing mobile health screening clinics, maternal nutrition, and safe drinking-water awareness.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
