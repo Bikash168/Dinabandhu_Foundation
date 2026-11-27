@@ -6,32 +6,32 @@ import { FOUNDATION_META } from '@/data/foundationData';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-300 border-t border-slate-800">
+    <footer className="bg-brand-950 text-cream-300 border-t border-brand-900">
       {/* Upper Footer: Newsletter / CSR callout */}
-      <div className="bg-gradient-to-r from-brand-950 via-slate-900 to-brand-950 py-8 sm:py-12 border-b border-slate-800">
+      <div className="bg-gradient-to-r from-brand-950 via-brand-900 to-brand-950 py-8 sm:py-12 border-b border-brand-900">
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
             <div className="lg:col-span-8 space-y-2">
               <span className="text-amber-400 font-semibold tracking-wide uppercase text-[10px] sm:text-xs">
                 Section 12AA & 80G Certified Apex Body
               </span>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-cream-50">
                 Partner With Dinabandhu Foundation for CSR & Grassroots Programs
               </h3>
-              <p className="text-slate-300 text-xs sm:text-sm max-w-3xl leading-relaxed">
+              <p className="text-cream-200 text-xs sm:text-sm max-w-3xl leading-relaxed">
                 As a registered trust under the Indian Trust Act 1882, we ensure transparent, accountable, and high-impact deployment of corporate CSR funds across health, environment, education, and skill development in Odisha.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-2.5 sm:gap-3">
               <Link
                 href="/csr-partnerships"
-                className="w-full text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 sm:py-3 rounded-xl shadow-lg hover:shadow-xl transition text-xs sm:text-sm"
+                className="w-full text-center bg-brand-800 hover:bg-brand-700 text-cream-50 font-bold px-5 py-2.5 sm:py-3 rounded-full shadow-lg hover:shadow-xl transition text-xs sm:text-sm border border-brand-700"
               >
                 Explore CSR Collaboration
               </Link>
               <Link
                 href="/get-involved"
-                className="w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-medium px-5 py-2.5 sm:py-3 rounded-xl border border-slate-700 transition text-xs sm:text-sm"
+                className="w-full text-center bg-brand-900/80 hover:bg-brand-900 text-cream-100 font-medium px-5 py-2.5 sm:py-3 rounded-full border border-brand-800 transition text-xs sm:text-sm"
               >
                 Volunteer / Internship
               </Link>
@@ -56,24 +56,24 @@ export default function Footer() {
                 />
               </div>
               <div className="min-w-0">
-                <h4 className="text-white font-bold text-base sm:text-lg tracking-tight truncate">DINABANDHU FOUNDATION</h4>
-                <p className="text-[11px] text-slate-400 line-clamp-1">Educational Research & Socio Economic Development</p>
+                <h4 className="text-cream-50 font-bold text-base sm:text-lg tracking-tight truncate">DINABANDHU FOUNDATION</h4>
+                <p className="text-[11px] text-cream-400 line-clamp-1">Educational Research & Socio Economic Development</p>
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <p className="text-xs sm:text-sm text-cream-300 leading-relaxed">
               Conceptualised in 1999 by Mrs. Shovana Devi in memory of (Late) Sri Dinabandhu Panigrahi (1917–1997)—Commonwealth Scholar at the University of Leeds (1946). Bridging world-standard education with grassroots socio-economic empowerment across Odisha.
             </p>
 
             {/* Compliance Pills */}
             <div className="pt-1 flex flex-wrap gap-1.5 sm:gap-2 text-[11px]">
-              <span className="bg-slate-900 border border-slate-700 text-amber-300 px-2 py-0.5 rounded">
+              <span className="bg-brand-900/60 border border-brand-800 text-amber-300 px-2 py-0.5 rounded">
                 Indian Trust Act 1882
               </span>
-              <span className="bg-slate-900 border border-slate-700 text-emerald-300 px-2 py-0.5 rounded">
+              <span className="bg-brand-900/60 border border-brand-800 text-emerald-300 px-2 py-0.5 rounded">
                 12AA & 80G Certified
               </span>
-              <span className="bg-slate-900 border border-slate-700 text-blue-300 px-2 py-0.5 rounded">
+              <span className="bg-brand-900/60 border border-brand-800 text-cream-200 px-2 py-0.5 rounded">
                 Bhubaneswar Jurisdiction
               </span>
             </div>

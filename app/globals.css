@@ -3,31 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --primary-blue: #1e3a8a;
-  --secondary-blue: #2563eb;
-  --accent-green: #059669;
+  /* 2-Color Combination from User Reference: */
+  /* Color 1: Deep Terracotta Maroon (Door: #6b3a33) */
+  --primary-terracotta: #6b3a33;
+  --primary-dark: #321511;
+  --primary-accent: #985145;
+
+  /* Color 2: Warm Cream Linen (Wall: #c5beb6 / #faf7f2) */
+  --bg-cream: #fcfaf7;
+  --surface-cream: #f6f0e8;
+  --border-cream: #e5dacd;
+  --text-charcoal: #2a2220;
 }
 
 body {
-  color: #1f2937;
-  background-color: #fcfcfd;
+  color: var(--text-charcoal);
+  background-color: var(--bg-cream);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar matching terracotta & cream */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f4efea;
 }
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: #c5beb6;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #6b3a33;
 }
 
 /* Custom Shape Classes - moving beyond repetitive rectangle cards */

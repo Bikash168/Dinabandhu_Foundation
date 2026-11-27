@@ -177,19 +177,19 @@ function MediaCornerContent() {
     <div className="w-full overflow-x-hidden">
       
       {/* 1. Header Banner */}
-      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-slate-900 text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none animate-float-slow" />
+      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-[#23120f] text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl pointer-events-none animate-float-slow" />
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal animation="fade-down">
             <div className="max-w-3xl space-y-3 sm:space-y-4">
-              <span className="text-amber-400 font-semibold tracking-wider text-[10px] sm:text-xs uppercase bg-white/10 px-3 py-1 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
-                <Sparkles className="w-3.5 h-3.5" />
+              <span className="text-cream-200 font-semibold tracking-wider text-[10px] sm:text-xs uppercase bg-white/10 px-3 py-1 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-cream-300" />
                 <span>MEDIA CORNER & PUBLICATIONS</span>
               </span>
               <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
                 Media Corner: News, Field Updates & Publications
               </h1>
-              <p className="text-xs sm:text-base md:text-lg text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-base md:text-lg text-cream-200 leading-relaxed">
                 Explore ground-level dispatches, events & campaigns, photo & video galleries, audited annual reports, newsletters, and stories of change from Dinabandhu Foundation.
               </p>
             </div>
@@ -198,15 +198,15 @@ function MediaCornerContent() {
       </section>
 
       {/* 2. Interactive Navigation Tabs */}
-      <section className="sticky top-16 sm:top-20 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+      <section className="sticky top-16 sm:top-20 z-30 bg-white/95 backdrop-blur-md border-b border-cream-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex overflow-x-auto no-scrollbar justify-start sm:justify-center gap-2 py-2.5 sm:py-3 px-2">
             <button
               onClick={() => setActiveTab('news')}
               className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'news'
-                  ? 'bg-brand-900 text-white shadow-md scale-105'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'bg-brand-800 text-cream-50 shadow-md scale-105'
+                  : 'bg-cream-100 text-cream-950 hover:bg-cream-200'
               }`}
             >
               <Newspaper className="w-3.5 h-3.5" />
@@ -216,8 +216,8 @@ function MediaCornerContent() {
               onClick={() => setActiveTab('events')}
               className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'events'
-                  ? 'bg-brand-900 text-white shadow-md scale-105'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'bg-brand-800 text-cream-50 shadow-md scale-105'
+                  : 'bg-cream-100 text-cream-950 hover:bg-cream-200'
               }`}
             >
               <Calendar className="w-3.5 h-3.5" />
@@ -227,8 +227,8 @@ function MediaCornerContent() {
               onClick={() => setActiveTab('gallery')}
               className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'gallery'
-                  ? 'bg-brand-900 text-white shadow-md scale-105'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'bg-brand-800 text-cream-50 shadow-md scale-105'
+                  : 'bg-cream-100 text-cream-950 hover:bg-cream-200'
               }`}
             >
               <ImageIcon className="w-3.5 h-3.5" />
@@ -238,8 +238,8 @@ function MediaCornerContent() {
               onClick={() => setActiveTab('reports')}
               className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'reports'
-                  ? 'bg-brand-900 text-white shadow-md scale-105'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'bg-brand-800 text-cream-50 shadow-md scale-105'
+                  : 'bg-cream-100 text-cream-950 hover:bg-cream-200'
               }`}
             >
               <FileText className="w-3.5 h-3.5" />
@@ -249,8 +249,8 @@ function MediaCornerContent() {
               onClick={() => setActiveTab('stories')}
               className={`flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all ${
                 activeTab === 'stories'
-                  ? 'bg-brand-900 text-white shadow-md scale-105'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'bg-brand-800 text-cream-50 shadow-md scale-105'
+                  : 'bg-cream-100 text-cream-950 hover:bg-cream-200'
               }`}
             >
               <BookOpen className="w-3.5 h-3.5" />
@@ -261,7 +261,7 @@ function MediaCornerContent() {
       </section>
 
       {/* 3. Tab Content Section */}
-      <section className="py-10 sm:py-20 bg-slate-50">
+      <section className="py-10 sm:py-20 bg-cream-50">
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
           
           {/* Tab 1: News & Updates in Document-Stub Shapes */}
@@ -269,10 +269,10 @@ function MediaCornerContent() {
             <div className="space-y-6 sm:space-y-8">
               <ScrollReveal animation="fade-up">
                 <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
                     Latest Field Dispatches & Press Coverage
                   </h2>
-                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                  <p className="text-xs sm:text-sm text-cream-700 mt-1">
                     Stay updated on our activities across health, environment, and skilling in Odisha.
                   </p>
                 </div>
@@ -281,29 +281,29 @@ function MediaCornerContent() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {newsItems.map((item, i) => (
                   <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                    <div className="bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm p-6 sm:p-7 border-2 border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 sm:space-y-4 flex flex-col justify-between h-full group">
+                    <div className="bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm p-6 sm:p-7 border-2 border-cream-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 sm:space-y-4 flex flex-col justify-between h-full group">
                       <div className="space-y-2.5">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] sm:text-xs font-bold text-brand-700 uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+                          <span className="text-[10px] sm:text-xs font-bold text-brand-800 uppercase bg-cream-100 px-3 py-1 rounded-full border border-cream-200">
                             {item.category}
                           </span>
-                          <span className="text-xs text-slate-400 font-mono">
+                          <span className="text-xs text-cream-700 font-mono">
                             {item.date}
                           </span>
                         </div>
-                        <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug group-hover:text-blue-700 transition-colors">
+                        <h3 className="text-lg sm:text-xl font-bold text-brand-950 leading-snug group-hover:text-brand-800 transition-colors">
                           {item.title}
                         </h3>
-                        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        <p className="text-xs sm:text-sm text-cream-900/80 leading-relaxed">
                           {item.snippet}
                         </p>
                       </div>
 
-                      <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                        <span className="text-[11px] font-semibold text-slate-500">{item.tag}</span>
+                      <div className="pt-3 border-t border-cream-100 flex items-center justify-between">
+                        <span className="text-[11px] font-semibold text-cream-700">{item.tag}</span>
                         <Link
                           href="/contact"
-                          className="text-xs font-bold text-brand-800 hover:text-brand-900 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                          className="text-xs font-bold text-brand-800 hover:text-brand-950 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
                         >
                           <span>Media Inquiry</span>
                           <ArrowRight className="w-3.5 h-3.5" />
@@ -321,10 +321,10 @@ function MediaCornerContent() {
             <div className="space-y-6 sm:space-y-8">
               <ScrollReveal animation="fade-up">
                 <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
                     Grassroots Events & Public Campaigns
                   </h2>
-                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                  <p className="text-xs sm:text-sm text-cream-700 mt-1">
                     Active field drives bringing together youth, rural women, panchayats, and health professionals.
                   </p>
                 </div>
@@ -333,26 +333,26 @@ function MediaCornerContent() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {events.map((ev, i) => (
                   <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                    <div className="bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm p-6 sm:p-7 border-2 border-emerald-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 flex flex-col justify-between h-full group">
+                    <div className="bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm p-6 sm:p-7 border-2 border-cream-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 flex flex-col justify-between h-full group">
                       <div className="space-y-2">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] sm:text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                          <span className="text-[10px] sm:text-xs font-bold text-brand-800 bg-cream-100 px-3 py-1 rounded-full border border-cream-200">
                             {ev.type}
                           </span>
-                          <span className="text-xs font-mono text-slate-400">
+                          <span className="text-xs font-mono text-cream-700">
                             {ev.date}
                           </span>
                         </div>
-                        <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                        <h3 className="text-lg sm:text-xl font-bold text-brand-950 group-hover:text-brand-800 transition-colors">
                           {ev.title}
                         </h3>
-                        <p className="text-xs sm:text-sm text-slate-600">
+                        <p className="text-xs sm:text-sm text-cream-900/80">
                           {ev.desc}
                         </p>
                       </div>
-                      <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                      <div className="pt-3 border-t border-cream-100 flex items-center justify-between text-xs text-cream-700">
                         <span>Location: {ev.location}</span>
-                        <Link href="/get-involved?type=volunteer" className="text-blue-700 font-bold hover:underline inline-flex items-center gap-1">
+                        <Link href="/get-involved?type=volunteer" className="text-brand-800 font-bold hover:underline inline-flex items-center gap-1">
                           <span>Join Event</span>
                           <ArrowRight className="w-3.5 h-3.5" />
                         </Link>
@@ -369,10 +369,10 @@ function MediaCornerContent() {
             <div className="space-y-6 sm:space-y-8">
               <ScrollReveal animation="fade-up">
                 <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
                     Moments from the Field: Grassroots Action in Focus
                   </h2>
-                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                  <p className="text-xs sm:text-sm text-cream-700 mt-1">
                     Documenting community engagement, health check-ups, and green skill sessions across Odisha.
                   </p>
                 </div>
@@ -381,16 +381,16 @@ function MediaCornerContent() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {galleryCategories.map((g, i) => (
                   <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                    <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 space-y-3 group">
-                      <div className="h-44 rounded-2xl bg-gradient-to-br from-brand-950 to-slate-900 flex items-center justify-center text-white relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-                        <ImageIcon className="w-12 h-12 text-white/30 group-hover:scale-110 transition-transform" />
+                    <div className="bg-white rounded-3xl p-5 border border-cream-200 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+                      <div className="h-44 rounded-2xl bg-gradient-to-br from-brand-950 to-brand-900 flex items-center justify-center text-white relative overflow-hidden group-hover:scale-[1.02] transition-transform">
+                        <ImageIcon className="w-12 h-12 text-cream-200/40 group-hover:scale-110 transition-transform" />
                         <span className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded-full shadow">
                           {g.count}
                         </span>
                       </div>
                       <div>
-                        <h4 className="font-bold text-slate-900 text-sm sm:text-base group-hover:text-blue-700 transition-colors">{g.title}</h4>
-                        <p className="text-xs text-slate-500 mt-1">{g.desc}</p>
+                        <h4 className="font-bold text-brand-950 text-sm sm:text-base group-hover:text-brand-800 transition-colors">{g.title}</h4>
+                        <p className="text-xs text-cream-700 mt-1">{g.desc}</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -404,10 +404,10 @@ function MediaCornerContent() {
             <div className="space-y-6 sm:space-y-8">
               <ScrollReveal animation="fade-up">
                 <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
                     Annual Reports, Impact Reports & Newsletters
                   </h2>
-                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                  <p className="text-xs sm:text-sm text-cream-700 mt-1">
                     Download our audited annual accounts, CSR apex portfolios, and quarterly newsletters.
                   </p>
                 </div>
@@ -416,31 +416,31 @@ function MediaCornerContent() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {reports.map((rep, i) => (
                   <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                    <div className="bg-white rounded-2xl rounded-tr-none border-t-4 border-t-amber-500 p-5 sm:p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 sm:space-y-4 flex flex-col justify-between h-full">
+                    <div className="bg-white rounded-2xl rounded-tr-none border-t-4 border-t-brand-800 p-5 sm:p-7 border border-cream-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 sm:space-y-4 flex flex-col justify-between h-full">
                       <div className="space-y-2.5">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] sm:text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                          <span className="text-[10px] sm:text-xs font-bold text-brand-800 bg-cream-100 px-2.5 py-0.5 rounded-full border border-cream-200">
                             {rep.type}
                           </span>
-                          <span className="text-xs text-slate-400 font-mono">
+                          <span className="text-xs text-cream-700 font-mono">
                             {rep.period}
                           </span>
                         </div>
-                        <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                        <h3 className="text-base sm:text-lg font-bold text-brand-950">
                           {rep.title}
                         </h3>
-                        <p className="text-xs text-slate-600 leading-relaxed">
+                        <p className="text-xs text-cream-900/80 leading-relaxed">
                           {rep.description}
                         </p>
                       </div>
 
-                      <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                        <span className="text-[11px] font-mono text-slate-400">{rep.size}</span>
+                      <div className="pt-3 border-t border-cream-100 flex items-center justify-between">
+                        <span className="text-[11px] font-mono text-cream-600">{rep.size}</span>
                         <a
                           href={`mailto:${FOUNDATION_META.email}?subject=Request%20Report%20${encodeURIComponent(rep.title)}`}
-                          className="inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-3.5 py-1.5 rounded-full transition-all shadow-sm"
+                          className="inline-flex items-center gap-1.5 bg-brand-800 hover:bg-brand-900 text-cream-50 text-xs font-bold px-3.5 py-1.5 rounded-full transition-all shadow-sm"
                         >
-                          <Download className="w-3.5 h-3.5 text-amber-300" />
+                          <Download className="w-3.5 h-3.5 text-cream-200" />
                           <span>Request PDF</span>
                         </a>
                       </div>
@@ -456,10 +456,10 @@ function MediaCornerContent() {
             <div className="space-y-6 sm:space-y-8">
               <ScrollReveal animation="fade-up">
                 <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                  <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
                     Blog / Stories of Change & Success Stories
                   </h2>
-                  <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                  <p className="text-xs sm:text-sm text-cream-700 mt-1">
                     Personal journeys of youth, mothers, and artisans across Odisha.
                   </p>
                 </div>
@@ -468,19 +468,19 @@ function MediaCornerContent() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {stories.map((s, i) => (
                   <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                    <div className="bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm p-6 border-2 border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 flex flex-col justify-between h-full group">
+                    <div className="bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm p-6 border-2 border-cream-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 flex flex-col justify-between h-full group">
                       <div className="space-y-2">
-                        <span className="text-[10px] font-bold uppercase text-purple-700 bg-purple-50 px-2.5 py-1 rounded-full border border-purple-200">
+                        <span className="text-[10px] font-bold uppercase text-brand-800 bg-cream-100 px-2.5 py-1 rounded-full border border-cream-200">
                           {s.sdg} • {s.district}
                         </span>
-                        <h3 className="text-base font-bold text-slate-900 group-hover:text-brand-900 transition-colors">
+                        <h3 className="text-base font-bold text-brand-950 group-hover:text-brand-800 transition-colors">
                           {s.title}
                         </h3>
-                        <p className="text-xs text-slate-600 leading-relaxed">
+                        <p className="text-xs text-cream-900/80 leading-relaxed">
                           {s.narrative}
                         </p>
                       </div>
-                      <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-brand-800">
+                      <div className="pt-3 border-t border-cream-100 text-xs font-semibold text-brand-800">
                         Beneficiary: {s.name}
                       </div>
                     </div>

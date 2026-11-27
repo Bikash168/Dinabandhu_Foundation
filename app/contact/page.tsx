@@ -56,19 +56,19 @@ export default function ContactPage() {
     <div className="w-full overflow-x-hidden">
       
       {/* 1. Header Banner */}
-      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-slate-900 text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none animate-float-slow" />
+      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-[#23120f] text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl pointer-events-none animate-float-slow" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal animation="fade-down">
             <div className="max-w-3xl space-y-3 sm:space-y-4">
-              <span className="text-amber-400 font-semibold tracking-wider text-[10px] sm:text-xs uppercase bg-white/10 px-3 py-1 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
-                <Sparkles className="w-3.5 h-3.5" />
+              <span className="text-cream-200 font-semibold tracking-wider text-[10px] sm:text-xs uppercase bg-white/10 px-3 py-1 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-cream-300" />
                 <span>CONTACT & FIELD DESK</span>
               </span>
               <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
                 Collaborate for Healthier Communities, Greener Ecosystems & Skilled Livelihoods
               </h1>
-              <p className="text-xs sm:text-base md:text-lg text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-base md:text-lg text-cream-200 leading-relaxed">
                 Have a question about our grassroots initiatives, CSR partnerships, or volunteer opportunities? Reach out to the Dinabandhu Foundation team—we welcome every conversation that drives lasting social impact.
               </p>
             </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
       </section>
 
       {/* 2. Contact Details & Form Grid */}
-      <section className="py-10 sm:py-20 bg-slate-50">
+      <section className="py-10 sm:py-20 bg-cream-50">
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
@@ -85,51 +85,51 @@ export default function ContactPage() {
             {/* Left Contact Details Plaque in Asymmetric Crest Shape */}
             <div className="lg:col-span-5 space-y-4 sm:space-y-6">
               <ScrollReveal animation="fade-right">
-                <div className="bg-white p-6 sm:p-8 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl border-2 border-slate-200 shadow-xl space-y-5">
+                <div className="bg-white p-6 sm:p-8 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl border-2 border-cream-200 shadow-xl space-y-5">
                   <div>
-                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-brand-800 bg-cream-100 px-3 py-1 rounded-full border border-cream-200">
                       CENTRAL HEADQUARTERS
                     </span>
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-brand-950 mt-2">
                       Grassroots Coordination & Support Desk
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                    <p className="text-xs sm:text-sm text-cream-700 mt-1">
                       Whether you represent a corporate CSR desk, an institutional donor, a local self-help group, or wish to volunteer on the ground, our team is ready to connect.
                     </p>
                   </div>
 
-                  <div className="space-y-3 text-xs sm:text-sm text-slate-700">
-                    <div className="flex items-start gap-3 p-3.5 bg-slate-50/80 rounded-2xl border border-slate-200/80">
-                      <MapPin className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
+                  <div className="space-y-3 text-xs sm:text-sm text-cream-900">
+                    <div className="flex items-start gap-3 p-3.5 bg-cream-50 rounded-2xl border border-cream-200">
+                      <MapPin className="w-5 h-5 text-brand-800 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="block text-slate-900 font-bold text-xs uppercase">Registered & Field Office:</strong>
-                        <span className="text-slate-600">Bhubaneswar, Odisha, India</span>
-                        <p className="text-[11px] text-slate-400 mt-0.5">Indian Trust Act 1882 Regd. Trust</p>
+                        <strong className="block text-brand-950 font-bold text-xs uppercase">Registered & Field Office:</strong>
+                        <span className="text-cream-800">Bhubaneswar, Odisha, India</span>
+                        <p className="text-[11px] text-cream-600 mt-0.5">Indian Trust Act 1882 Regd. Trust</p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3 p-3.5 bg-slate-50/80 rounded-2xl border border-slate-200/80">
-                      <Mail className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
+                    <div className="flex items-start gap-3 p-3.5 bg-cream-50 rounded-2xl border border-cream-200">
+                      <Mail className="w-5 h-5 text-brand-800 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="block text-slate-900 font-bold text-xs uppercase">Email Correspondence:</strong>
+                        <strong className="block text-brand-950 font-bold text-xs uppercase">Email Correspondence:</strong>
                         <a href={`mailto:${FOUNDATION_META.email}`} className="text-brand-800 hover:underline font-semibold break-all">
                           {FOUNDATION_META.email}
                         </a>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3 p-3.5 bg-slate-50/80 rounded-2xl border border-slate-200/80">
-                      <Clock className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
+                    <div className="flex items-start gap-3 p-3.5 bg-cream-50 rounded-2xl border border-cream-200">
+                      <Clock className="w-5 h-5 text-brand-800 flex-shrink-0 mt-0.5" />
                       <div>
-                        <strong className="block text-slate-900 font-bold text-xs uppercase">Helpline & Office Hours:</strong>
-                        <span className="text-slate-600">{FOUNDATION_META.hours}</span>
+                        <strong className="block text-brand-950 font-bold text-xs uppercase">Helpline & Office Hours:</strong>
+                        <span className="text-cream-800">{FOUNDATION_META.hours}</span>
                       </div>
                     </div>
                   </div>
 
-                  <div className="pt-2 border-t border-slate-100">
-                    <div className="flex items-center gap-2 text-xs font-semibold text-emerald-800 bg-emerald-50 p-3 rounded-xl border border-emerald-200 shadow-sm">
-                      <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <div className="pt-2 border-t border-cream-100">
+                    <div className="flex items-center gap-2 text-xs font-semibold text-brand-950 bg-cream-100 p-3 rounded-xl border border-cream-300 shadow-sm">
+                      <ShieldCheck className="w-4 h-4 text-brand-800 flex-shrink-0" />
                       <span>Section 12AA & 80G Certified Non-Profit Trust</span>
                     </div>
                   </div>
@@ -140,22 +140,22 @@ export default function ContactPage() {
             {/* Right Contact Form in Sculpted Capsule Shell */}
             <div className="lg:col-span-7">
               <ScrollReveal animation="fade-left">
-                <div className="bg-white p-6 sm:p-10 rounded-[2.5rem] rounded-tr-none border-2 border-slate-200 shadow-2xl space-y-5">
+                <div className="bg-white p-6 sm:p-10 rounded-[2.5rem] rounded-tr-none border-2 border-cream-200 shadow-2xl space-y-5">
                   
                   <div className="space-y-1">
-                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900">
+                    <h3 className="text-xl sm:text-2xl font-bold text-brand-950">
                       Send Us a Message
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-500">
+                    <p className="text-xs sm:text-sm text-cream-700">
                       Fill out the form below and we will respond promptly within 24–48 hours.
                     </p>
                   </div>
 
                   {submitted ? (
-                    <div className="p-8 bg-emerald-50 border-2 border-emerald-300 rounded-2xl text-center space-y-3">
-                      <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
-                      <h4 className="text-xl font-bold text-emerald-900">Message Dispatched!</h4>
-                      <p className="text-sm text-emerald-700 max-w-md mx-auto">
+                    <div className="p-8 bg-cream-100 border-2 border-brand-300 rounded-2xl text-center space-y-3">
+                      <CheckCircle2 className="w-12 h-12 text-brand-800 mx-auto" />
+                      <h4 className="text-xl font-bold text-brand-950">Message Dispatched!</h4>
+                      <p className="text-sm text-cream-900 max-w-md mx-auto">
                         Thank you for contacting Dinabandhu Foundation. Our coordinator will review your inquiry and follow up at <strong>{formData.email}</strong>.
                       </p>
                     </div>
@@ -163,7 +163,7 @@ export default function ContactPage() {
                     <form onSubmit={handleSubmit} className="space-y-5">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                          <label className="block text-xs font-bold text-cream-900 uppercase mb-1">
                             Your Name *
                           </label>
                           <input
@@ -172,12 +172,12 @@ export default function ContactPage() {
                             value={formData.name}
                             onChange={e => setFormData({ ...formData, name: e.target.value })}
                             placeholder="Your Name"
-                            className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"
+                            className="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none"
                           />
                         </div>
 
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                          <label className="block text-xs font-bold text-cream-900 uppercase mb-1">
                             Email Address *
                           </label>
                           <input
@@ -186,14 +186,14 @@ export default function ContactPage() {
                             value={formData.email}
                             onChange={e => setFormData({ ...formData, email: e.target.value })}
                             placeholder="name@email.com"
-                            className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"
+                            className="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none"
                           />
                         </div>
                       </div>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                          <label className="block text-xs font-bold text-cream-900 uppercase mb-1">
                             Contact Phone Number
                           </label>
                           <input
@@ -201,18 +201,18 @@ export default function ContactPage() {
                             value={formData.phone}
                             onChange={e => setFormData({ ...formData, phone: e.target.value })}
                             placeholder="+91 98765 43210"
-                            className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"
+                            className="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none"
                           />
                         </div>
 
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                          <label className="block text-xs font-bold text-cream-900 uppercase mb-1">
                             Inquiry Subject
                           </label>
                           <select
                             value={formData.subject}
                             onChange={e => setFormData({ ...formData, subject: e.target.value })}
-                            className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white"
+                            className="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none bg-white"
                           >
                             <option>General Inquiry</option>
                             <option>Corporate CSR Partnership</option>
@@ -225,7 +225,7 @@ export default function ContactPage() {
                       </div>
 
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                        <label className="block text-xs font-bold text-cream-900 uppercase mb-1">
                           Your Message / Details *
                         </label>
                         <textarea
@@ -234,15 +234,15 @@ export default function ContactPage() {
                           value={formData.message}
                           onChange={e => setFormData({ ...formData, message: e.target.value })}
                           placeholder="Please write your query, collaboration idea, or message here..."
-                          className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"
+                          className="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none"
                         />
                       </div>
 
                       <button
                         type="submit"
-                        className="w-full bg-brand-900 hover:bg-brand-800 text-white font-bold py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5"
+                        className="w-full bg-brand-800 hover:bg-brand-900 text-cream-50 font-bold py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5"
                       >
-                        <Send className="w-4 h-4 text-amber-300" />
+                        <Send className="w-4 h-4 text-cream-200" />
                         <span>Send Message to Dinabandhu Foundation</span>
                       </button>
                     </form>
@@ -257,15 +257,15 @@ export default function ContactPage() {
       </section>
 
       {/* 3. Frequently Asked Questions with Scalloped Accordion Shells */}
-      <section className="py-12 sm:py-20 bg-white border-t border-slate-200">
+      <section className="py-12 sm:py-20 bg-cream-100/60 border-t border-cream-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
           <ScrollReveal animation="fade-up">
             <div className="text-center space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-3.5 py-1.5 rounded-full border border-purple-200">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-800 bg-cream-200 px-3.5 py-1.5 rounded-full border border-cream-300">
                 FREQUENTLY ASKED QUESTIONS
               </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-brand-950 mt-2">
                 Everything You Need to Know
               </h3>
             </div>
@@ -274,12 +274,12 @@ export default function ContactPage() {
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                <div className="p-5 sm:p-6 rounded-2xl rounded-tr-none bg-slate-50 border-l-4 border-l-blue-600 border border-slate-200 hover:shadow-md transition-all space-y-2">
-                  <h4 className="font-bold text-slate-900 text-sm sm:text-base flex items-start gap-2.5">
-                    <HelpCircle className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
+                <div className="p-5 sm:p-6 rounded-2xl rounded-tr-none bg-white border-l-4 border-l-brand-800 border border-cream-200 hover:shadow-md transition-all space-y-2">
+                  <h4 className="font-bold text-brand-950 text-sm sm:text-base flex items-start gap-2.5">
+                    <HelpCircle className="w-5 h-5 text-brand-800 flex-shrink-0 mt-0.5" />
                     <span>{f.q}</span>
                   </h4>
-                  <p className="text-xs sm:text-sm text-slate-600 pl-7 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-cream-900/80 pl-7 leading-relaxed">
                     {f.a}
                   </p>
                 </div>

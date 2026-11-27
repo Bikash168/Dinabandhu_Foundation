@@ -8,18 +8,34 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Primary 2-Color Combination from User's Image:
+        // Color 1: Deep Terracotta Maroon / Brick Red (Door Color: #6b3a33)
         brand: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          50: '#fbf6f5',
+          100: '#f6ece9',
+          200: '#edd8d4',
+          300: '#dfbbb3',
+          400: '#cb958a',
+          500: '#b36f63',
+          600: '#985145',
+          700: '#7e3f36',
+          800: '#6b3a33', // Exact door color
+          900: '#552c26',
+          950: '#321511', // Deep dark maroon
+        },
+        // Color 2: Warm Cream / Ivory Linen (Wall Color: #c5beb6 / #faf7f2)
+        cream: {
+          50: '#fcfaf7',
+          100: '#f8f4ee',
+          200: '#efe7dc',
+          300: '#e1d5c5',
+          400: '#c5beb6', // Exact wall color
+          500: '#a79e94',
+          600: '#898075',
+          700: '#6c645b',
+          800: '#544d46',
+          900: '#3e3833',
+          950: '#231f1c',
         },
         accent: {
           emerald: '#059669',

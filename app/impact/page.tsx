@@ -74,19 +74,19 @@ export default function ImpactPage() {
     <div className="w-full overflow-x-hidden">
       
       {/* 1. Header Banner */}
-      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-slate-900 text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none animate-float-slow" />
+      <section className="bg-gradient-to-b from-brand-950 via-brand-900 to-[#23120f] text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl pointer-events-none animate-float-slow" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal animation="fade-down">
             <div className="max-w-3xl space-y-3 sm:space-y-4">
-              <span className="text-amber-400 font-semibold tracking-wider text-xs uppercase bg-white/10 px-3.5 py-1.5 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
-                <Sparkles className="w-3.5 h-3.5" />
+              <span className="text-cream-200 font-semibold tracking-wider text-xs uppercase bg-white/10 px-3.5 py-1.5 rounded-full border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-cream-300" />
                 <span>IMPACT STORIES & RESULTS</span>
               </span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
                 Real Lives Changed, Real Communities Transformed
               </h1>
-              <p className="text-xs sm:text-base md:text-lg text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-base md:text-lg text-cream-200 leading-relaxed">
                 Every young person in Odisha deserves a fair chance to build a good life. That simple belief is what gets us up and moving every single day.
               </p>
             </div>
@@ -95,11 +95,11 @@ export default function ImpactPage() {
       </section>
 
       {/* 2. Core Narrative in Asymmetric Parchment Shape */}
-      <section className="py-10 sm:py-16 bg-white border-b border-slate-200">
+      <section className="py-10 sm:py-16 bg-cream-50 border-b border-cream-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal animation="zoom-in">
-            <div className="p-6 sm:p-10 bg-gradient-to-br from-blue-50/70 via-indigo-50/40 to-white border-2 border-blue-200 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl shadow-lg space-y-4 text-slate-700 leading-relaxed text-xs sm:text-base relative overflow-hidden">
-              <div className="w-32 h-32 bg-blue-500/5 rounded-full absolute -top-10 -right-10 pointer-events-none" />
+            <div className="p-6 sm:p-10 bg-white border-2 border-cream-300 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl shadow-lg space-y-4 text-cream-950 leading-relaxed text-xs sm:text-base relative overflow-hidden">
+              <div className="w-32 h-32 bg-brand-500/5 rounded-full absolute -top-10 -right-10 pointer-events-none" />
               <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
                 The Journey of Youth Skilling & Sustainable Hope
               </h2>
@@ -118,18 +118,18 @@ export default function ImpactPage() {
       </section>
 
       {/* 3. UN SDGs Alignment Grid with Token Shapes */}
-      <section className="py-12 sm:py-20 bg-slate-50">
+      <section className="py-12 sm:py-20 bg-cream-100/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <ScrollReveal animation="fade-up">
             <div className="text-center max-w-3xl mx-auto space-y-2 sm:space-y-3 mb-10 sm:mb-14">
-              <span className="text-xs font-bold tracking-wider text-purple-700 uppercase bg-purple-50 px-3.5 py-1.5 rounded-full border border-purple-200">
+              <span className="text-xs font-bold tracking-wider text-brand-800 uppercase bg-cream-200 px-3.5 py-1.5 rounded-full border border-cream-300">
                 UNITED NATIONS FRAMEWORK
               </span>
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
                 Guided by Sustainable Development Goals (SDGs)
               </h2>
-              <p className="text-xs sm:text-base text-slate-600">
+              <p className="text-xs sm:text-base text-cream-900/80">
                 Every step we take connects to globally recognized indicators of social progress and ecological resilience.
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function ImpactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {UN_SDGS.map((sdg, i) => (
               <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                <div className="bg-white rounded-3xl rounded-tr-sm p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full group">
+                <div className="bg-white rounded-3xl rounded-tr-sm p-6 sm:p-7 border border-cream-200 shadow-sm hover:shadow-xl hover:border-brand-700 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full group">
                   <div className="space-y-4">
                     <div
                       className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-black text-sm shadow-md group-hover:scale-110 transition-transform"
@@ -146,16 +146,16 @@ export default function ImpactPage() {
                     >
                       {sdg.sdg}
                     </div>
-                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                    <h3 className="text-lg font-bold text-brand-950 group-hover:text-brand-800 transition-colors">
                       {sdg.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-cream-900/80 leading-relaxed">
                       {sdg.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-slate-500">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                  <div className="pt-4 mt-4 border-t border-cream-100 flex items-center gap-1.5 text-xs font-semibold text-cream-700">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-brand-800" />
                     <span>Dinabandhu Core Metric</span>
                   </div>
                 </div>
@@ -165,16 +165,16 @@ export default function ImpactPage() {
 
           {/* 2036 & 2047 Vision Banner as Ceremonial Pavilion */}
           <ScrollReveal animation="zoom-in" delay={150}>
-            <div id="vision2036" className="mt-12 sm:mt-16 bg-gradient-to-r from-brand-950 via-slate-900 to-indigo-950 rounded-[2.5rem] rounded-tr-none p-6 sm:p-12 text-white shadow-2xl border border-slate-800">
+            <div id="vision2036" className="mt-12 sm:mt-16 bg-gradient-to-r from-brand-950 via-brand-900 to-[#23120f] rounded-[2.5rem] rounded-tr-none p-6 sm:p-12 text-white shadow-2xl border border-brand-800">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
                 <div className="lg:col-span-8 space-y-3">
-                  <span className="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+                  <span className="text-xs font-bold text-cream-200 uppercase tracking-widest bg-brand-900 px-3 py-1 rounded-full border border-brand-700">
                     COMMITTED TO ODISHA&apos;S CENTENARY & INDIA&apos;S INDEPENDENCE CENTENARY
                   </span>
                   <h3 className="text-xl sm:text-3xl font-extrabold text-white mt-1">
                     Developed Odisha by 2036 • Viksit Bharat by 2047
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-cream-100 leading-relaxed">
                     We share a big dream for our home. We want to be part of building a <strong>Developed Odisha by 2036</strong> and a <strong>Viksit Bharat by 2047</strong>. We know this dream cannot come true through buildings and roads alone. It will come true through people, and especially through young people who are skilled, confident, and ready to lead.
                   </p>
                 </div>
@@ -182,13 +182,13 @@ export default function ImpactPage() {
                 <div className="lg:col-span-4 flex flex-col gap-3">
                   <Link
                     href="/get-involved"
-                    className="w-full text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-full shadow-lg transition-all text-xs sm:text-sm transform hover:-translate-y-0.5"
+                    className="w-full text-center bg-cream-100 hover:bg-cream-200 text-brand-950 font-bold px-6 py-3 rounded-full shadow-lg transition-all text-xs sm:text-sm transform hover:-translate-y-0.5"
                   >
                     Walk With Us
                   </Link>
                   <Link
                     href="/csr-partnerships"
-                    className="w-full text-center bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 rounded-full border border-white/20 transition-all text-xs sm:text-sm"
+                    className="w-full text-center bg-white/10 hover:bg-white/20 text-cream-100 font-medium px-6 py-3 rounded-full border border-white/20 transition-all text-xs sm:text-sm"
                   >
                     Partner for Impact
                   </Link>
@@ -201,19 +201,19 @@ export default function ImpactPage() {
       </section>
 
       {/* 4. Stories of Change in Asymmetric Quote Shells */}
-      <section className="py-12 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <ScrollReveal animation="fade-up">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
               <div>
-                <span className="text-xs font-bold tracking-wider text-emerald-700 uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                <span className="text-xs font-bold tracking-wider text-brand-800 uppercase bg-cream-200 px-3 py-1 rounded-full border border-cream-300">
                   EVIDENCE & DATA
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-950 mt-2">
                   Grassroots Stories of Change
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                <p className="text-xs sm:text-sm text-cream-800 mt-1">
                   Real accounts from our participants across Odisha districts.
                 </p>
               </div>
@@ -224,8 +224,8 @@ export default function ImpactPage() {
                   onClick={() => setSelectedCategory('all')}
                   className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                     selectedCategory === 'all'
-                      ? 'bg-brand-900 text-white shadow-md'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      ? 'bg-brand-800 text-cream-50 shadow-md'
+                      : 'bg-white text-cream-950 border border-cream-300 hover:bg-cream-100'
                   }`}
                 >
                   All Stories
@@ -234,8 +234,8 @@ export default function ImpactPage() {
                   onClick={() => setSelectedCategory('green-skills')}
                   className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                     selectedCategory === 'green-skills'
-                      ? 'bg-emerald-600 text-white shadow-md'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      ? 'bg-brand-900 text-cream-50 shadow-md'
+                      : 'bg-white text-cream-950 border border-cream-300 hover:bg-cream-100'
                   }`}
                 >
                   Green Skills & Energy
@@ -244,8 +244,8 @@ export default function ImpactPage() {
                   onClick={() => setSelectedCategory('women')}
                   className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                     selectedCategory === 'women'
-                      ? 'bg-amber-600 text-white shadow-md'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      ? 'bg-brand-700 text-cream-50 shadow-md'
+                      : 'bg-white text-cream-950 border border-cream-300 hover:bg-cream-100'
                   }`}
                 >
                   Women SHGs
@@ -254,8 +254,8 @@ export default function ImpactPage() {
                   onClick={() => setSelectedCategory('health')}
                   className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                     selectedCategory === 'health'
-                      ? 'bg-blue-600 text-white shadow-md'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      ? 'bg-brand-800 text-cream-50 shadow-md'
+                      : 'bg-white text-cream-950 border border-cream-300 hover:bg-cream-100'
                   }`}
                 >
                   Preventive Health
@@ -267,34 +267,34 @@ export default function ImpactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {filteredStories.map((story, i) => (
               <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                <div className="h-full bg-slate-50/70 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl p-6 sm:p-8 border-2 border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                <div className="h-full bg-white rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl p-6 sm:p-8 border-2 border-cream-200 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                   <div className="space-y-3.5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold uppercase tracking-wider text-brand-800 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+                      <span className="text-xs font-bold uppercase tracking-wider text-brand-800 bg-cream-100 px-3 py-1 rounded-full border border-cream-200 shadow-sm">
                         {story.district} District
                       </span>
-                      <span className="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">
+                      <span className="text-xs font-bold text-cream-800 bg-cream-100 px-2.5 py-0.5 rounded-full border border-cream-200">
                         {story.sdg}
                       </span>
                     </div>
 
-                    <h3 className="text-lg font-bold text-slate-900 leading-snug group-hover:text-brand-900 transition-colors">
+                    <h3 className="text-lg font-bold text-brand-950 leading-snug group-hover:text-brand-800 transition-colors">
                       {story.title}
                     </h3>
 
-                    <div className="text-xs font-semibold text-emerald-700">
+                    <div className="text-xs font-semibold text-brand-800">
                       Beneficiary: {story.name} • {story.trade}
                     </div>
 
-                    <blockquote className="text-xs sm:text-sm text-slate-600 italic border-l-2 border-brand-500 pl-3 py-1 leading-relaxed">
+                    <blockquote className="text-xs sm:text-sm text-cream-900/80 italic border-l-2 border-brand-800 pl-3 py-1 leading-relaxed">
                       &ldquo;{story.quote}&rdquo;
                     </blockquote>
                   </div>
 
-                  <div className="pt-4 mt-6 border-t border-slate-200">
-                    <div className="p-3 bg-white rounded-xl border border-slate-200 flex items-center gap-2 shadow-sm">
-                      <Award className="w-4 h-4 text-amber-500 flex-shrink-0" />
-                      <span className="text-xs font-bold text-slate-800">
+                  <div className="pt-4 mt-6 border-t border-cream-100">
+                    <div className="p-3 bg-cream-50 rounded-xl border border-cream-200 flex items-center gap-2 shadow-sm">
+                      <Award className="w-4 h-4 text-brand-800 flex-shrink-0" />
+                      <span className="text-xs font-bold text-cream-950">
                         {story.impactMetric}
                       </span>
                     </div>
