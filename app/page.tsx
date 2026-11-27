@@ -575,7 +575,18 @@ export default function HomePage() {
                       </span>
                     </div>
 
-                    <div className="space-y-3 pt-3">
+                    {/* Official Entity Logo in Clean Crisp Badge */}
+                    <div className="my-3.5 p-3 bg-white rounded-2xl flex items-center justify-center shadow-lg border border-white/20 h-20 w-full overflow-hidden group-hover:scale-[1.02] transition-transform">
+                      <Image
+                        src={v.logo}
+                        alt={`${v.name} Official Logo`}
+                        width={220}
+                        height={70}
+                        className="max-h-14 max-w-full object-contain"
+                      />
+                    </div>
+
+                    <div className="space-y-3 pt-1">
                       <h3 className="text-xl font-bold text-white group-hover:text-cream-200 transition-colors">
                         {v.name}
                       </h3>

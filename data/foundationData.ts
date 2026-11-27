@@ -160,6 +160,7 @@ export const VERTICALS = [
     name: "Trident Academy of Technology",
     category: "Higher & Technical Education",
     tagline: "Flagship College Under the Trust",
+    logo: "/images/trident-logo.png",
     description: "Offering premium undergraduate and postgraduate degrees in Engineering, Biotechnology, Computer Applications, and Management. Has graduated over 10,000 professionals driving innovation across global industries.",
     highlights: ["AICTE Approved & BPUT Affiliated", "Bio-technology & CSE Leadership", "10,000+ Alumni Network", "High-Tech Research Labs"]
   },
@@ -167,6 +168,7 @@ export const VERTICALS = [
     name: "SkillEM",
     category: "Skill Development & Livelihoods",
     tagline: "Empowering Rural & Urban Youth",
+    logo: "/images/skillem-logo.png",
     description: "The dedicated vocational training vertical implementing flagship Central and State government schemes such as DDU-GKY and PMKVY. Connects youth with certified trades and sustainable employment linkages.",
     highlights: ["DDU-GKY Implementation", "PMKVY Certification", "Green Skills Training", "Industry Job Placements"]
   },
@@ -174,6 +176,7 @@ export const VERTICALS = [
     name: "Indevin",
     category: "Grassroots CSR Apex Body",
     tagline: "Social Re-engineering & Grassroots Welfare",
+    logo: "/images/indevin-logo.png",
     description: "The grassroots welfare brand of Dinabandhu Foundation advancing primary & English education, public health, women empowerment, environmental stewardship, and community resilience.",
     highlights: ["CSR Fund Apex Integrator", "12AA & 80G Certified", "200+ Villages Network", "Impact Audits & Evidence"]
   }

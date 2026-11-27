@@ -392,26 +392,59 @@ export default function WhereWeWorkPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <ScrollReveal animation="fade-up" delay={50}>
-              <div className="bg-brand-900/80 p-6 rounded-2xl rounded-tr-none border-t-4 border-t-brand-600 border border-brand-800 space-y-3 h-full hover:shadow-xl transition-all">
-                <span className="text-xs font-semibold text-cream-200 uppercase">Higher Education</span>
-                <h3 className="text-xl font-bold text-white">Trident Academy of Technology</h3>
-                <p className="text-xs text-cream-100">Flagship technical college offering UG and PG programs in Engineering, Biotech & Computer Applications (10,000+ graduates).</p>
+              <div className="bg-brand-900/80 p-6 rounded-2xl rounded-tr-none border-t-4 border-t-brand-600 border border-brand-800 space-y-3.5 h-full hover:shadow-xl transition-all flex flex-col justify-between">
+                <div>
+                  <div className="mb-3 p-2.5 bg-white rounded-xl flex items-center justify-center shadow h-16 w-full overflow-hidden">
+                    <Image
+                      src="/images/trident-logo.png"
+                      alt="Trident Academy of Technology Logo"
+                      width={180}
+                      height={50}
+                      className="max-h-12 max-w-full object-contain"
+                    />
+                  </div>
+                  <span className="text-xs font-semibold text-cream-200 uppercase">Higher Education</span>
+                  <h3 className="text-xl font-bold text-white mt-1">Trident Academy of Technology</h3>
+                  <p className="text-xs text-cream-100 mt-2 leading-relaxed">Flagship technical college offering UG and PG programs in Engineering, Biotech & Computer Applications (10,000+ graduates).</p>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={100}>
-              <div className="bg-brand-900/80 p-6 rounded-2xl rounded-tr-none border-t-4 border-t-cream-400 border border-brand-800 space-y-3 h-full hover:shadow-xl transition-all">
-                <span className="text-xs font-semibold text-cream-200 uppercase">Skilling Arm</span>
-                <h3 className="text-xl font-bold text-white">SkillEM</h3>
-                <p className="text-xs text-cream-100">Central and State government vocational schemes implementation (DDU-GKY, PMKVY) with verified industry job placement linkages.</p>
+              <div className="bg-brand-900/80 p-6 rounded-2xl rounded-tr-none border-t-4 border-t-cream-400 border border-brand-800 space-y-3.5 h-full hover:shadow-xl transition-all flex flex-col justify-between">
+                <div>
+                  <div className="mb-3 p-2.5 bg-white rounded-xl flex items-center justify-center shadow h-16 w-full overflow-hidden">
+                    <Image
+                      src="/images/skillem-logo.png"
+                      alt="SkillEM Logo"
+                      width={180}
+                      height={50}
+                      className="max-h-12 max-w-full object-contain"
+                    />
+                  </div>
+                  <span className="text-xs font-semibold text-cream-200 uppercase">Skilling Arm</span>
+                  <h3 className="text-xl font-bold text-white mt-1">SkillEM</h3>
+                  <p className="text-xs text-cream-100 mt-2 leading-relaxed">Central and State government vocational schemes implementation (DDU-GKY, PMKVY) with verified industry job placement linkages.</p>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={150}>
-              <div className="bg-brand-900/80 p-6 rounded-2xl rounded-tr-none border-t-4 border-t-brand-500 border border-brand-800 space-y-3 h-full hover:shadow-xl transition-all">
-                <span className="text-xs font-semibold text-cream-200 uppercase">CSR Apex Integrator</span>
-                <h3 className="text-xl font-bold text-white">Indevin</h3>
-                <p className="text-xs text-cream-100">Corporate social responsibility vertical managing village health camps, climate afforestation, and transparent impact audits.</p>
+              <div className="bg-brand-900/80 p-6 rounded-2xl rounded-tr-none border-t-4 border-t-brand-500 border border-brand-800 space-y-3.5 h-full hover:shadow-xl transition-all flex flex-col justify-between">
+                <div>
+                  <div className="mb-3 p-2.5 bg-white rounded-xl flex items-center justify-center shadow h-16 w-full overflow-hidden">
+                    <Image
+                      src="/images/indevin-logo.png"
+                      alt="Indevin Logo"
+                      width={180}
+                      height={50}
+                      className="max-h-12 max-w-full object-contain"
+                    />
+                  </div>
+                  <span className="text-xs font-semibold text-cream-200 uppercase">CSR Apex Integrator</span>
+                  <h3 className="text-xl font-bold text-white mt-1">Indevin</h3>
+                  <p className="text-xs text-cream-100 mt-2 leading-relaxed">Corporate social responsibility vertical managing village health camps, climate afforestation, and transparent impact audits.</p>
+                </div>
               </div>
             </ScrollReveal>
           </div>

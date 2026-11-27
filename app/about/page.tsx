@@ -448,16 +448,27 @@ export default function AboutPage() {
             {VERTICALS.map((v, idx) => (
               <ScrollReveal key={idx} animation="fade-up" delay={idx * 100}>
                 <div className="bg-white rounded-[2rem] rounded-tr-sm p-6 sm:p-8 border border-cream-200 shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-                  <div className="lg:col-span-4 space-y-1.5">
-                    <span className="text-xs font-bold text-brand-800 uppercase tracking-wider block">
-                      {v.category}
-                    </span>
-                    <h3 className="text-xl sm:text-2xl font-bold text-brand-950">
-                      {v.name}
-                    </h3>
-                    <p className="text-xs text-cream-800 font-semibold">
-                      {v.tagline}
-                    </p>
+                  <div className="lg:col-span-4 space-y-3">
+                    <div className="w-44 h-16 bg-cream-50/80 rounded-xl p-2 border border-cream-200 flex items-center justify-center overflow-hidden shadow-sm">
+                      <Image
+                        src={v.logo}
+                        alt={`${v.name} Logo`}
+                        width={180}
+                        height={55}
+                        className="max-h-12 max-w-full object-contain"
+                      />
+                    </div>
+                    <div>
+                      <span className="text-xs font-bold text-brand-800 uppercase tracking-wider block">
+                        {v.category}
+                      </span>
+                      <h3 className="text-xl sm:text-2xl font-bold text-brand-950 mt-0.5">
+                        {v.name}
+                      </h3>
+                      <p className="text-xs text-cream-800 font-semibold mt-0.5">
+                        {v.tagline}
+                      </p>
+                    </div>
                   </div>
 
                   <div className="lg:col-span-5 text-xs sm:text-sm text-cream-900/80 leading-relaxed">
