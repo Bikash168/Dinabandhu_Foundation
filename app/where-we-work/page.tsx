@@ -279,34 +279,94 @@ export default function WhereWeWorkPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <ScrollReveal animation="fade-up" delay={50}>
-              <div className="p-5 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-white border border-cream-200 hover:shadow-lg transition-all space-y-2 h-full">
-                <span className="text-[10px] font-bold uppercase text-brand-800 bg-brand-50 px-2 py-0.5 rounded">Central Apex Hub</span>
-                <h4 className="font-bold text-brand-950 text-base">Bhubaneswar Tech Campus</h4>
-                <p className="text-xs text-cream-800">Advanced high-tech skilling labs, biotechnology research, and CSR command center.</p>
+              <div className="rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm bg-white border border-cream-200 hover:shadow-xl transition-all h-full overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_35_Facilities12.JPG"
+                    alt="Bhubaneswar Tech Campus"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">Central Hub</span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Bhubaneswar Tech Campus</h4>
+                    <p className="text-xs text-cream-800 mt-1">Advanced high-tech skilling labs, biotechnology research, and CSR command center.</p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={100}>
-              <div className="p-5 rounded-tr-2xl rounded-bl-2xl rounded-tl-sm rounded-br-sm bg-white border border-cream-200 hover:shadow-lg transition-all space-y-2 h-full">
-                <span className="text-[10px] font-bold uppercase text-brand-800 bg-cream-100 px-2 py-0.5 rounded">Vocational Training</span>
-                <h4 className="font-bold text-brand-950 text-base">Bhadrak SkillEM Center</h4>
-                <p className="text-xs text-cream-800">DDU-GKY and PMKVY trade classrooms, sewing and electrical workshops, computer lab.</p>
+              <div className="rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm bg-white border border-cream-200 hover:shadow-xl transition-all h-full overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_37_IMG_20240229_114035.jpg"
+                    alt="Bhadrak SkillEM Center"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">Skill Hub</span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Bhadrak SkillEM Center</h4>
+                    <p className="text-xs text-cream-800 mt-1">DDU-GKY and PMKVY trade classrooms, sewing and electrical workshops, computer lab.</p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={150}>
-              <div className="p-5 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-white border border-cream-200 hover:shadow-lg transition-all space-y-2 h-full">
-                <span className="text-[10px] font-bold uppercase text-brand-800 bg-brand-50 px-2 py-0.5 rounded">Mobile Unit</span>
-                <h4 className="font-bold text-brand-950 text-base">Southern Coastal Health Van</h4>
-                <p className="text-xs text-cream-800">Mobile preventive medical diagnostics, water quality testing, and maternal health vans.</p>
+              <div className="rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm bg-white border border-cream-200 hover:shadow-xl transition-all h-full overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg"
+                    alt="Southern Coastal Health Van"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">Mobile Clinic</span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Southern Coastal Health Van</h4>
+                    <p className="text-xs text-cream-800 mt-1">Mobile preventive medical diagnostics, water quality testing, and maternal health vans.</p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={200}>
-              <div className="p-5 rounded-tr-2xl rounded-bl-2xl rounded-tl-sm rounded-br-sm bg-white border border-cream-200 hover:shadow-lg transition-all space-y-2 h-full">
-                <span className="text-[10px] font-bold uppercase text-brand-800 bg-cream-100 px-2 py-0.5 rounded">Highland Livelihoods</span>
-                <h4 className="font-bold text-brand-950 text-base">Koraput Tribal Agro Hub</h4>
-                <p className="text-xs text-cream-800">Agroforestry training, organic composting workshops, and native sapling distribution.</p>
+              <div className="rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm bg-white border border-cream-200 hover:shadow-xl transition-all h-full overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_47_IMG_20251219_155359.jpg"
+                    alt="Koraput Tribal Agro Hub"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">Agro Hub</span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Koraput Tribal Agro Hub</h4>
+                    <p className="text-xs text-cream-800 mt-1">Agroforestry training, organic composting workshops, and native sapling distribution.</p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
           </div>

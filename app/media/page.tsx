@@ -16,15 +16,23 @@ import {
   ExternalLink,
   Award,
   BookOpen,
-  CheckCircle2
+  CheckCircle2,
+  X,
+  Maximize2,
+  MapPin,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import { FOUNDATION_META } from '@/data/foundationData';
+import { GALLERY_PHOTOS, GalleryPhoto } from '@/data/galleryImages';
 
 function MediaCornerContent() {
   const searchParams = useSearchParams();
   const initialTab = (searchParams.get('tab') as 'news' | 'events' | 'gallery' | 'reports' | 'stories') || 'news';
   const [activeTab, setActiveTab] = useState<'news' | 'events' | 'gallery' | 'reports' | 'stories'>(initialTab);
+  const [galleryCategory, setGalleryCategory] = useState<string>('all');
+  const [selectedPhoto, setSelectedPhoto] = useState<GalleryPhoto | null>(null);
 
   useEffect(() => {
     const tab = searchParams.get('tab');
@@ -32,6 +40,10 @@ function MediaCornerContent() {
       setActiveTab(tab as any);
     }
   }, [searchParams]);
+
+  const filteredPhotos = galleryCategory === 'all'
+    ? GALLERY_PHOTOS
+    : GALLERY_PHOTOS.filter(p => p.category === galleryCategory);
 
   const newsItems = [
     {
@@ -70,28 +82,32 @@ function MediaCornerContent() {
       date: 'Upcoming • December 12, 2026',
       location: 'Bhubaneswar Campus',
       desc: 'Annual symposium bringing together industry leaders, solar enterprises, and 500 vocational trainees.',
-      type: 'Conference'
+      type: 'Conference',
+      image: '/images/drive/photo_1__MG_2324.JPG'
     },
     {
       title: 'Coastal Health & Safe Water Yatra',
       date: 'Bi-Weekly Drive',
       location: 'Puri & Ganjam Districts',
       desc: 'Mobile preventive health camp conducting water testing, eye checkups, and nutritional screening.',
-      type: 'Health Camp'
+      type: 'Health Camp',
+      image: '/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg'
     },
     {
       title: 'DDU-GKY & PMKVY Youth Mobilization Drives',
       date: 'Monthly Drive',
       location: 'Bhadrak, Khordha & Nuapada',
       desc: 'Free counseling sessions for 10th/12th dropouts and graduates linking to government-certified trades.',
-      type: 'SkillEM Skilling'
+      type: 'SkillEM Skilling',
+      image: '/images/drive/photo_43_IMG_20250712_134816.jpg'
     },
     {
       title: 'Swachhta & Safe Water Community Literacy',
       date: 'Ongoing Initiative',
       location: '10 Districts in Odisha',
       desc: 'Door-to-door water chlorination education, toilet hygiene workshops, and youth clean-up rallies.',
-      type: 'Sanitation'
+      type: 'Sanitation',
+      image: '/images/drive/photo_47_IMG_20251219_155359.jpg'
     }
   ];
 
@@ -333,29 +349,49 @@ function MediaCornerContent() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {events.map((ev, i) => (
                   <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                    <div className="bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm p-6 sm:p-7 border-2 border-cream-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 flex flex-col justify-between h-full group">
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className="text-[10px] sm:text-xs font-bold text-brand-800 bg-cream-100 px-3 py-1 rounded-full border border-cream-200">
-                            {ev.type}
-                          </span>
-                          <span className="text-xs font-mono text-cream-700">
-                            {ev.date}
-                          </span>
+                    <div className="bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm border-2 border-cream-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full group overflow-hidden">
+                      {ev.image && (
+                        <div className="relative aspect-[16/9] w-full bg-cream-200 overflow-hidden">
+                          <Image
+                            src={ev.image}
+                            alt={ev.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="absolute top-3 left-3">
+                            <span className="text-[10px] sm:text-xs font-bold text-brand-900 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-cream-300 shadow-sm">
+                              {ev.type}
+                            </span>
+                          </div>
                         </div>
-                        <h3 className="text-lg sm:text-xl font-bold text-brand-950 group-hover:text-brand-800 transition-colors">
-                          {ev.title}
-                        </h3>
-                        <p className="text-xs sm:text-sm text-cream-900/80">
-                          {ev.desc}
-                        </p>
-                      </div>
-                      <div className="pt-3 border-t border-cream-100 flex items-center justify-between text-xs text-cream-700">
-                        <span>Location: {ev.location}</span>
-                        <Link href="/get-involved?type=volunteer" className="text-brand-800 font-bold hover:underline inline-flex items-center gap-1">
-                          <span>Join Event</span>
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </Link>
+                      )}
+                      <div className="p-5 sm:p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-between">
+                            {!ev.image && (
+                              <span className="text-[10px] sm:text-xs font-bold text-brand-800 bg-cream-100 px-3 py-1 rounded-full border border-cream-200">
+                                {ev.type}
+                              </span>
+                            )}
+                            <span className="text-xs font-mono text-cream-700">
+                              {ev.date}
+                            </span>
+                          </div>
+                          <h3 className="text-lg sm:text-xl font-bold text-brand-950 group-hover:text-brand-800 transition-colors">
+                            {ev.title}
+                          </h3>
+                          <p className="text-xs sm:text-sm text-cream-900/80">
+                            {ev.desc}
+                          </p>
+                        </div>
+                        <div className="pt-3 border-t border-cream-100 flex items-center justify-between text-xs text-cream-700">
+                          <span>Location: {ev.location}</span>
+                          <Link href="/get-involved?type=volunteer" className="text-brand-800 font-bold hover:underline inline-flex items-center gap-1">
+                            <span>Join Event</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -364,38 +400,161 @@ function MediaCornerContent() {
             </div>
           )}
 
-          {/* Tab 3: Photo & Video Gallery in Framed Viewports */}
+          {/* Tab 3: Photo & Video Gallery with Real Field Photos & Lightbox */}
           {activeTab === 'gallery' && (
             <div className="space-y-6 sm:space-y-8">
               <ScrollReveal animation="fade-up">
-                <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                  <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950">
+                <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+                  <span className="text-[10px] sm:text-xs font-bold tracking-wider text-brand-800 uppercase bg-cream-200/90 px-3 py-1 rounded-full border border-cream-300">
+                    FIELD DOCUMENTATION
+                  </span>
+                  <h2 className="text-xl sm:text-3xl font-extrabold text-brand-950 mt-2">
                     Moments from the Field: Grassroots Action in Focus
                   </h2>
                   <p className="text-xs sm:text-sm text-cream-700 mt-1">
-                    Documenting community engagement, health check-ups, and green skill sessions across Odisha.
+                    Authentic documentation of community clinics, solar skill workshops, environmental drives, and women&apos;s self-help groups across 10 districts of Odisha.
                   </p>
+                </div>
+
+                {/* Filter Pills */}
+                <div className="flex flex-wrap items-center justify-center gap-2 max-w-3xl mx-auto mb-8">
+                  {[
+                    { id: 'all', label: `All Photos (${GALLERY_PHOTOS.length})` },
+                    { id: 'skilling', label: 'Skill Development' },
+                    { id: 'health', label: 'Public Health' },
+                    { id: 'environment', label: 'Environment' },
+                    { id: 'community', label: 'Community Welfare' },
+                    { id: 'campus', label: 'Campus & Facilities' },
+                  ].map((cat) => (
+                    <button
+                      key={cat.id}
+                      onClick={() => setGalleryCategory(cat.id)}
+                      className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
+                        galleryCategory === cat.id
+                          ? 'bg-brand-800 text-cream-50 shadow-md scale-105'
+                          : 'bg-white text-cream-950 hover:bg-cream-100 border border-cream-200'
+                      }`}
+                    >
+                      {cat.label}
+                    </button>
+                  ))}
                 </div>
               </ScrollReveal>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {galleryCategories.map((g, i) => (
-                  <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
-                    <div className="bg-white rounded-3xl p-5 border border-cream-200 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 space-y-3 group">
-                      <div className="h-44 rounded-2xl bg-gradient-to-br from-brand-950 to-brand-900 flex items-center justify-center text-white relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-                        <ImageIcon className="w-12 h-12 text-cream-200/40 group-hover:scale-110 transition-transform" />
-                        <span className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded-full shadow">
-                          {g.count}
-                        </span>
+              {/* Photo Grid in Distinct Asymmetric Rounded Frames */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+                {filteredPhotos.map((photo, i) => (
+                  <ScrollReveal key={photo.id} animation="fade-up" delay={(i % 6) * 70}>
+                    <div 
+                      onClick={() => setSelectedPhoto(photo)}
+                      className="cursor-pointer bg-white rounded-tl-[2rem] rounded-br-[2rem] rounded-tr-md rounded-bl-md border-2 border-cream-200 shadow-sm hover:shadow-2xl hover:border-brand-700 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden group h-full"
+                    >
+                      {/* Image Frame */}
+                      <div className="relative aspect-[4/3] w-full bg-cream-200 overflow-hidden">
+                        <Image
+                          src={photo.src}
+                          alt={photo.title}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-3.5 text-white">
+                          <span className="text-[11px] font-semibold bg-brand-800/90 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1">
+                            <Maximize2 className="w-3 h-3" />
+                            <span>Click to Zoom</span>
+                          </span>
+                          <span className="text-[10px] font-mono bg-black/60 px-2 py-0.5 rounded">
+                            {photo.date}
+                          </span>
+                        </div>
+                        {/* Static Category Badge */}
+                        <div className="absolute top-2.5 left-2.5">
+                          <span className="text-[10px] font-bold tracking-wider text-brand-900 bg-white/90 backdrop-blur-md px-2.5 py-0.5 rounded-full shadow-sm border border-cream-300">
+                            {photo.categoryLabel}
+                          </span>
+                        </div>
                       </div>
-                      <div>
-                        <h4 className="font-bold text-brand-950 text-sm sm:text-base group-hover:text-brand-800 transition-colors">{g.title}</h4>
-                        <p className="text-xs text-cream-700 mt-1">{g.desc}</p>
+
+                      {/* Content Details */}
+                      <div className="p-4 sm:p-5 space-y-2 flex-1 flex flex-col justify-between">
+                        <div>
+                          <div className="flex items-center gap-1.5 text-[11px] text-cream-700 font-medium mb-1">
+                            <MapPin className="w-3 h-3 text-brand-800 flex-shrink-0" />
+                            <span>{photo.location}</span>
+                          </div>
+                          <h4 className="font-bold text-brand-950 text-sm sm:text-base group-hover:text-brand-800 transition-colors leading-snug">
+                            {photo.title}
+                          </h4>
+                          <p className="text-xs text-cream-800/80 mt-1.5 line-clamp-2">
+                            {photo.description}
+                          </p>
+                        </div>
+
+                        <div className="pt-3 border-t border-cream-100 flex items-center justify-between text-[11px] font-semibold text-brand-800">
+                          <span>View Full Resolution</span>
+                          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                        </div>
                       </div>
                     </div>
                   </ScrollReveal>
                 ))}
               </div>
+
+              {/* Lightbox Modal */}
+              {selectedPhoto && (
+                <div 
+                  className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6"
+                  onClick={() => setSelectedPhoto(null)}
+                >
+                  <div 
+                    className="relative max-w-4xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl border-2 border-brand-800"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <button
+                      onClick={() => setSelectedPhoto(null)}
+                      className="absolute top-3 right-3 z-10 p-2 bg-black/70 hover:bg-black text-white rounded-full transition shadow-lg"
+                      aria-label="Close"
+                    >
+                      <X className="w-5 h-5" />
+                    </button>
+
+                    <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full bg-brand-950">
+                      <Image
+                        src={selectedPhoto.src}
+                        alt={selectedPhoto.title}
+                        fill
+                        className="object-contain"
+                        priority
+                      />
+                    </div>
+
+                    <div className="p-4 sm:p-6 bg-cream-50 space-y-2">
+                      <div className="flex flex-wrap items-center justify-between gap-2">
+                        <span className="text-[11px] font-bold text-brand-800 bg-cream-200 px-3 py-1 rounded-full border border-cream-300">
+                          {selectedPhoto.categoryLabel}
+                        </span>
+                        <div className="flex items-center gap-3 text-xs text-cream-700">
+                          <span className="flex items-center gap-1">
+                            <MapPin className="w-3.5 h-3.5 text-brand-800" />
+                            {selectedPhoto.location}
+                          </span>
+                          <span>•</span>
+                          <span className="flex items-center gap-1">
+                            <Calendar className="w-3.5 h-3.5 text-brand-800" />
+                            {selectedPhoto.date}
+                          </span>
+                        </div>
+                      </div>
+                      <h3 className="text-lg sm:text-xl font-bold text-brand-950">
+                        {selectedPhoto.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-cream-900/80 leading-relaxed">
+                        {selectedPhoto.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 

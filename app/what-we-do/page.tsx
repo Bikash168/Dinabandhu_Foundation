@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { 
   Heart, 
@@ -31,6 +32,47 @@ function WhatWeDoContent() {
   }, [searchParams]);
 
   const currentPillar = PILLARS.find(p => p.id === activeTab) || PILLARS[0];
+
+  const pillarPhotos: Record<string, Array<{ src: string; title: string; subtitle: string }>> = {
+    health: [
+      {
+        src: '/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg',
+        title: 'Mobile Diagnostic Clinic in Action',
+        subtitle: 'Preventive doctor screenings across coastal hamlets'
+      },
+      {
+        src: '/images/drive/photo_6_385022059_819309399981698_5885252841370628177_n.jpg',
+        title: 'Maternal & Community Awareness',
+        subtitle: 'Doorstep preventive guidance & safe water education'
+      }
+    ],
+    environment: [
+      {
+        src: '/images/drive/photo_47_IMG_20251219_155359.jpg',
+        title: 'Youth Mangrove & Forest Afforestation',
+        subtitle: 'Restoring natural cyclone protection in coastal belt'
+      },
+      {
+        src: '/images/drive/photo_18_475788975_122138965892513320_4797780344660842673_n.jpg',
+        title: 'Indigenous Sapling Distribution',
+        subtitle: 'Vermicomposting workshops for smallholder farmers'
+      }
+    ],
+    skills: [
+      {
+        src: '/images/drive/photo_38_IMG_20250712_125403.jpg',
+        title: 'Women SHG Skill & Stitching Hub',
+        subtitle: 'Garment manufacturing & self-reliance training'
+      },
+      {
+        src: '/images/drive/photo_43_IMG_20250712_134816.jpg',
+        title: 'Technical Hands-on Vocational Lab',
+        subtitle: 'Practical trade & electrical skilling with industry equipment'
+      }
+    ]
+  };
+
+  const activePhotos = pillarPhotos[activeTab] || pillarPhotos.health;
 
   return (
     <div className="w-full overflow-x-hidden">
@@ -141,6 +183,42 @@ function WhatWeDoContent() {
                   <p className="text-xs sm:text-sm text-cream-950 font-medium leading-relaxed">
                     {currentPillar.vision}
                   </p>
+                </div>
+              </div>
+
+              {/* Real Field Action Photos for This Pillar */}
+              <div className="pt-6 sm:pt-8 border-t border-cream-100 mt-6 sm:mt-8">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-brand-800">
+                    Live Documentation: {currentPillar.name} in Action
+                  </span>
+                  <Link href="/media?tab=gallery" className="text-xs font-semibold text-brand-800 hover:underline flex items-center gap-1">
+                    <span>View More in Gallery</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  {activePhotos.map((photo, i) => (
+                    <div key={i} className="group bg-cream-50 rounded-2xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-md transition">
+                      <div className="relative aspect-[16/9] w-full bg-cream-200 overflow-hidden">
+                        <Image
+                          src={photo.src}
+                          alt={photo.title}
+                          fill
+                          sizes="(max-width: 640px) 100vw, 50vw"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-3.5">
+                        <h4 className="font-bold text-brand-950 text-xs sm:text-sm group-hover:text-brand-800 transition-colors">
+                          {photo.title}
+                        </h4>
+                        <p className="text-[11px] text-cream-700 mt-0.5">
+                          {photo.subtitle}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

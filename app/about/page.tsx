@@ -319,50 +319,110 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <ScrollReveal animation="fade-up" delay={50}>
-              <div className="h-full bg-white p-5 rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm border-2 border-brand-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-800 bg-brand-50 px-2 py-0.5 rounded">
-                  Executive Leadership
-                </span>
-                <h4 className="font-bold text-brand-950 text-base">Trustees & Directors</h4>
-                <p className="text-xs text-cream-800">
-                  Guiding institutional strategy, higher technical education standards, and transparent governance.
-                </p>
+              <div className="h-full bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm border-2 border-brand-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_1__MG_2324.JPG"
+                    alt="Executive Leadership & Convocation"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">
+                      Leadership
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Trustees & Directors</h4>
+                    <p className="text-xs text-cream-800 mt-1">
+                      Guiding institutional strategy, higher technical education standards, and transparent governance.
+                    </p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={100}>
-              <div className="h-full bg-white p-5 rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm border-2 border-cream-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-800 bg-cream-100 px-2 py-0.5 rounded">
-                  Environment & Afforestation
-                </span>
-                <h4 className="font-bold text-brand-950 text-base">Ecological Specialists</h4>
-                <p className="text-xs text-cream-800">
-                  Leading native plantation drives, watershed management, soil conservation, and school eco-clubs.
-                </p>
+              <div className="h-full bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm border-2 border-cream-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_47_IMG_20251219_155359.jpg"
+                    alt="Ecological Specialists"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">
+                      Ecology
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Ecological Specialists</h4>
+                    <p className="text-xs text-cream-800 mt-1">
+                      Leading native plantation drives, watershed management, soil conservation, and school eco-clubs.
+                    </p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={150}>
-              <div className="h-full bg-white p-5 rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm border-2 border-brand-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-800 bg-brand-50 px-2 py-0.5 rounded">
-                  SkillEM Vocational
-                </span>
-                <h4 className="font-bold text-brand-950 text-base">Master Trainers & Mobilizers</h4>
-                <p className="text-xs text-cream-800">
-                  Executing DDU-GKY, PMKVY, solar installation, and women SHG trade courses with job linkages.
-                </p>
+              <div className="h-full bg-white rounded-tl-3xl rounded-br-3xl rounded-tr-sm rounded-bl-sm border-2 border-brand-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_38_IMG_20250712_125403.jpg"
+                    alt="Master Trainers & Mobilizers"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">
+                      SkillEM
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Master Trainers & Mobilizers</h4>
+                    <p className="text-xs text-cream-800 mt-1">
+                      Executing DDU-GKY, PMKVY, solar installation, and women SHG trade courses with job linkages.
+                    </p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={200}>
-              <div className="h-full bg-white p-5 rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm border-2 border-cream-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-800 bg-cream-100 px-2 py-0.5 rounded">
-                  Health & Outreach
-                </span>
-                <h4 className="font-bold text-brand-950 text-base">Field Health Coordinators</h4>
-                <p className="text-xs text-cream-800">
-                  Managing mobile health screening clinics, maternal nutrition, and safe drinking-water awareness.
-                </p>
+              <div className="h-full bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-sm rounded-br-sm border-2 border-cream-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col justify-between group">
+                <div className="relative aspect-[16/10] w-full bg-cream-200 overflow-hidden">
+                  <Image
+                    src="/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg"
+                    alt="Field Health Coordinators"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2 left-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-brand-900 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm">
+                      Health
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-bold text-brand-950 text-base group-hover:text-brand-800 transition-colors">Field Health Coordinators</h4>
+                    <p className="text-xs text-cream-800 mt-1">
+                      Managing mobile health screening clinics, maternal nutrition, and safe drinking-water awareness.
+                    </p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
           </div>

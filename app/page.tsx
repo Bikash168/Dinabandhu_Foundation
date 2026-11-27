@@ -335,14 +335,30 @@ export default function HomePage() {
             
             {/* Pillar 1 (Health): Organic Droplet / Heart Curvature */}
             <ScrollReveal animation="fade-up" delay={50}>
-              <div className="h-full bg-white rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl p-6 sm:p-7 border-2 border-brand-200/80 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group">
-                <div className="space-y-3 sm:space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="p-3 rounded-2xl bg-gradient-to-tr from-brand-800 to-brand-600 text-cream-50 shadow-md group-hover:scale-110 group-hover:rotate-6 transition-transform">
-                      <Heart className="w-6 h-6" />
+              <div className="h-full bg-white rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-xl rounded-bl-xl p-5 sm:p-6 border-2 border-brand-200/80 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+                <div className="space-y-3">
+                  {/* Photo Banner */}
+                  <div className="relative h-40 w-full rounded-tl-[2.5rem] rounded-br-2xl rounded-tr-lg rounded-bl-lg overflow-hidden border border-cream-200 bg-cream-100 shadow-inner">
+                    <Image
+                      src="/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg"
+                      alt="Mobile Diagnostic Clinic and Preventive Health Camp"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-2.5 left-2.5">
+                      <span className="text-[10px] font-mono font-bold text-brand-900 bg-white/90 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-brand-200 shadow-sm">
+                        PILLAR 01
+                      </span>
                     </div>
-                    <span className="text-[11px] font-mono font-bold text-brand-800 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
-                      PILLAR 01
+                  </div>
+
+                  <div className="flex items-center justify-between pt-1">
+                    <div className="p-2.5 rounded-xl bg-gradient-to-tr from-brand-800 to-brand-600 text-cream-50 shadow-md group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                      <Heart className="w-5 h-5" />
+                    </div>
+                    <span className="text-[11px] font-semibold text-brand-800">
+                      Preventive & Grassroots
                     </span>
                   </div>
 
@@ -369,7 +385,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="pt-5 mt-5 border-t border-cream-200">
+                <div className="pt-4 mt-4 border-t border-cream-200">
                   <Link
                     href="/what-we-do?tab=health"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-800 hover:text-brand-950 group-hover:translate-x-1 transition-all"
@@ -383,14 +399,30 @@ export default function HomePage() {
 
             {/* Pillar 2 (Environment): Organic Leaf Petal Curvature */}
             <ScrollReveal animation="fade-up" delay={150}>
-              <div className="h-full bg-white rounded-tr-[3.5rem] rounded-bl-[3.5rem] rounded-tl-xl rounded-br-xl p-6 sm:p-7 border-2 border-cream-300 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group">
-                <div className="space-y-3 sm:space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="p-3 rounded-2xl bg-gradient-to-tr from-brand-900 to-brand-700 text-cream-50 shadow-md group-hover:scale-110 group-hover:-rotate-6 transition-transform">
-                      <Leaf className="w-6 h-6" />
+              <div className="h-full bg-white rounded-tr-[3.5rem] rounded-bl-[3.5rem] rounded-tl-xl rounded-br-xl p-5 sm:p-6 border-2 border-cream-300 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+                <div className="space-y-3">
+                  {/* Photo Banner */}
+                  <div className="relative h-40 w-full rounded-tr-[2.5rem] rounded-bl-2xl rounded-tl-lg rounded-br-lg overflow-hidden border border-cream-200 bg-cream-100 shadow-inner">
+                    <Image
+                      src="/images/drive/photo_47_IMG_20251219_155359.jpg"
+                      alt="Panchayat Youth Afforestation & Eco Restoration"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-2.5 left-2.5">
+                      <span className="text-[10px] font-mono font-bold text-brand-900 bg-white/90 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-cream-300 shadow-sm">
+                        PILLAR 02
+                      </span>
                     </div>
-                    <span className="text-[11px] font-mono font-bold text-brand-800 bg-cream-100 px-2.5 py-1 rounded-full border border-cream-300">
-                      PILLAR 02
+                  </div>
+
+                  <div className="flex items-center justify-between pt-1">
+                    <div className="p-2.5 rounded-xl bg-gradient-to-tr from-brand-900 to-brand-700 text-cream-50 shadow-md group-hover:scale-110 group-hover:-rotate-6 transition-transform">
+                      <Leaf className="w-5 h-5" />
+                    </div>
+                    <span className="text-[11px] font-semibold text-brand-800">
+                      Climate & Ecology
                     </span>
                   </div>
 
@@ -417,7 +449,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="pt-5 mt-5 border-t border-cream-200">
+                <div className="pt-4 mt-4 border-t border-cream-200">
                   <Link
                     href="/what-we-do?tab=environment"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-800 hover:text-brand-950 group-hover:translate-x-1 transition-all"
@@ -431,14 +463,30 @@ export default function HomePage() {
 
             {/* Pillar 3 (Skills): Modern Tech Chamfered Cut */}
             <ScrollReveal animation="fade-up" delay={250}>
-              <div className="h-full bg-white rounded-3xl rounded-tr-none border-t-4 border-t-brand-800 border border-cream-300 p-6 sm:p-7 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group">
-                <div className="space-y-3 sm:space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="p-3 rounded-2xl bg-gradient-to-tr from-brand-700 to-brand-500 text-cream-50 shadow-md group-hover:scale-110 group-hover:rotate-6 transition-transform">
-                      <GraduationCap className="w-6 h-6" />
+              <div className="h-full bg-white rounded-3xl rounded-tr-none border-t-4 border-t-brand-800 border border-cream-300 p-5 sm:p-6 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+                <div className="space-y-3">
+                  {/* Photo Banner */}
+                  <div className="relative h-40 w-full rounded-2xl rounded-tr-none overflow-hidden border border-cream-200 bg-cream-100 shadow-inner">
+                    <Image
+                      src="/images/drive/photo_38_IMG_20250712_125403.jpg"
+                      alt="Women SHG Skill Development & Vocational Lab"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-2.5 left-2.5">
+                      <span className="text-[10px] font-mono font-bold text-brand-900 bg-white/90 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-brand-200 shadow-sm">
+                        PILLAR 03
+                      </span>
                     </div>
-                    <span className="text-[11px] font-mono font-bold text-brand-800 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
-                      PILLAR 03
+                  </div>
+
+                  <div className="flex items-center justify-between pt-1">
+                    <div className="p-2.5 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 text-cream-50 shadow-md group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                      <GraduationCap className="w-5 h-5" />
+                    </div>
+                    <span className="text-[11px] font-semibold text-brand-800">
+                      Livelihood & Skilling
                     </span>
                   </div>
 
@@ -465,7 +513,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="pt-5 mt-5 border-t border-cream-200">
+                <div className="pt-4 mt-4 border-t border-cream-200">
                   <Link
                     href="/what-we-do?tab=skills"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-800 hover:text-brand-950 group-hover:translate-x-1 transition-all"
@@ -758,7 +806,114 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. CALL TO ACTION - SCALLOPED PILL BUTTONS */}
+      {/* 9. GRASSROOTS PHOTO SHOWCASE - REAL FIELD ACTION FROM GOOGLE DRIVE */}
+      <section className="py-12 sm:py-20 bg-cream-100/60 border-t border-cream-200">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <ScrollReveal animation="fade-up">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12">
+              <div className="space-y-2 max-w-2xl">
+                <span className="text-[10px] sm:text-xs font-bold tracking-wider text-brand-800 uppercase bg-cream-200 px-3 py-1 rounded-full border border-cream-300">
+                  REAL ACTION • REAL IMPACT
+                </span>
+                <h2 className="text-2xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
+                  Moments from the Ground in Odisha
+                </h2>
+                <p className="text-xs sm:text-base text-cream-900/80">
+                  Real photos of our field teams, doctors, youth skilling workshops, and coastal afforestation drives across rural communities.
+                </p>
+              </div>
+
+              <Link
+                href="/media?tab=gallery"
+                className="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-900 text-cream-50 font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow transition-all self-start sm:self-auto flex-shrink-0"
+              >
+                <span>Explore Full Gallery (50+ Photos)</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </ScrollReveal>
+
+          {/* Asymmetric Photo Mosaic */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {[
+              {
+                src: '/images/drive/photo_38_IMG_20250712_125403.jpg',
+                tag: 'SkillEM Workshop',
+                title: 'Women SHG Tailoring & Stitching Hub',
+                location: 'Bhadrak Center',
+                shape: 'rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-md rounded-bl-md'
+              },
+              {
+                src: '/images/drive/photo_15_472067853_122132348918513320_7317603235333479596_n.jpg',
+                tag: 'Public Health',
+                title: 'Mobile Diagnostic Clinic in Coastal Hamlets',
+                location: 'Puri District',
+                shape: 'rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-md rounded-br-md'
+              },
+              {
+                src: '/images/drive/photo_47_IMG_20251219_155359.jpg',
+                tag: 'Environment',
+                title: 'Panchayat Youth Afforestation Drive',
+                location: 'Kendrapara Mangroves',
+                shape: 'rounded-3xl rounded-tr-none'
+              },
+              {
+                src: '/images/drive/photo_1__MG_2324.JPG',
+                tag: 'Convocation',
+                title: 'Certified Trainees Graduation & Placement',
+                location: 'Main Training Campus',
+                shape: 'rounded-3xl rounded-bl-none'
+              },
+              {
+                src: '/images/drive/photo_45_IMG_20251219_155051.jpg',
+                tag: 'Community',
+                title: 'Village Gram Sabha & Micro-Enterprise Meet',
+                location: 'Balasore District',
+                shape: 'rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-md rounded-bl-md'
+              },
+              {
+                src: '/images/drive/photo_35_Facilities12.JPG',
+                tag: 'Infrastructure',
+                title: 'Modern IT Educational Infrastructure',
+                location: 'Bhubaneswar Academic Wing',
+                shape: 'rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-md rounded-br-md'
+              }
+            ].map((item, idx) => (
+              <ScrollReveal key={idx} animation="fade-up" delay={idx * 70}>
+                <Link
+                  href="/media?tab=gallery"
+                  className={`group block bg-white ${item.shape} border-2 border-cream-200 overflow-hidden shadow-sm hover:shadow-2xl hover:border-brand-700 hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col justify-between`}
+                >
+                  <div className="relative aspect-[4/3] w-full bg-cream-200 overflow-hidden">
+                    <Image
+                      src={item.src}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-2.5 left-2.5">
+                      <span className="text-[10px] font-bold text-brand-900 bg-white/90 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-cream-300 shadow-sm">
+                        {item.tag}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-5 space-y-1">
+                    <span className="text-[11px] font-semibold text-cream-700 block">
+                      {item.location}
+                    </span>
+                    <h4 className="font-bold text-brand-950 text-sm sm:text-base group-hover:text-brand-800 transition-colors leading-snug">
+                      {item.title}
+                    </h4>
+                  </div>
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 10. CALL TO ACTION - SCALLOPED PILL BUTTONS */}
       <section className="py-12 sm:py-20 bg-cream-100/70 border-t border-cream-200">
         <ScrollReveal animation="fade-up">
           <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 text-center space-y-4 sm:space-y-6">
