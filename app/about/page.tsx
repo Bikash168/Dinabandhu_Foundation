@@ -22,17 +22,17 @@ export default function AboutPage() {
   return (
     <div className="w-full">
       {/* Header Banner */}
-      <section className="bg-brand-950 text-white py-16 sm:py-20 relative overflow-hidden">
+      <section className="bg-brand-950 text-white py-10 sm:py-14 lg:py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-blue-600/10 blur-3xl pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl space-y-4">
+          <div className="max-w-3xl space-y-3 sm:space-y-4">
             <span className="text-amber-400 font-semibold tracking-wider text-xs uppercase bg-white/10 px-3.5 py-1.5 rounded-full border border-white/10">
               ABOUT DINABANDHU FOUNDATION
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
               Our Story, Legacy & Governance
             </h1>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed">
               Dinabandhu Foundation works towards quality education, skill development, and the socio-economic empowerment of underserved communities across Odisha.
             </p>
           </div>

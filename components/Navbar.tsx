@@ -52,17 +52,17 @@ export default function Navbar() {
     <>
       {/* Sticky Main Header matching user reference screenshot */}
       <header className="w-full sticky top-0 z-40 bg-white border-t-4 border-blue-700 shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20 sm:h-24">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             
             {/* Left: Official Logo & Three-tier Typography */}
-            <Link href="/" className="flex items-center gap-3 sm:gap-4 group min-w-0">
-              <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 transition-transform group-hover:scale-105 duration-200">
+            <Link href="/" className="flex items-center gap-2.5 sm:gap-3.5 group min-w-0">
+              <div className="relative w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 flex-shrink-0 transition-transform group-hover:scale-105 duration-200">
                 <Image
                   src="/images/logo.png"
                   alt="Dinabandhu Foundation Official Seal"
-                  width={64}
-                  height={64}
+                  width={56}
+                  height={56}
                   className="object-contain w-full h-full"
                   priority
                 />
@@ -70,40 +70,40 @@ export default function Navbar() {
 
               <div className="flex flex-col min-w-0 justify-center">
                 {/* 1. Main Foundation Name in bold blue */}
-                <span className="font-extrabold text-base xs:text-lg sm:text-2xl md:text-3xl text-blue-700 tracking-tight leading-none group-hover:text-blue-800 transition truncate">
+                <span className="font-extrabold text-sm xs:text-base sm:text-xl lg:text-2xl text-blue-700 tracking-tight leading-none group-hover:text-blue-800 transition truncate">
                   DINABANDHU FOUNDATION
                 </span>
                 
                 {/* 2. Sub-line 1: EST. 1999 • BHUBANESWAR, ODISHA in gray */}
-                <span className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-1 truncate">
+                <span className="text-[9px] xs:text-[10px] sm:text-xs font-semibold text-slate-500 tracking-wider uppercase mt-1 truncate">
                   EST. 1999 • BHUBANESWAR, ODISHA
                 </span>
 
                 {/* 3. Sub-line 2: Health • Environment • Skill Development in green */}
-                <span className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-emerald-700 tracking-wide mt-0.5 truncate">
+                <span className="text-[9px] xs:text-[10px] sm:text-xs font-semibold text-emerald-700 tracking-wide mt-0.5 truncate">
                   Health • Environment • Skill Development
                 </span>
               </div>
             </Link>
 
             {/* Right: Get Involved Button & Hamburger Menu Icon */}
-            <div className="flex items-center gap-3 sm:gap-5 flex-shrink-0">
+            <div className="flex items-center gap-2.5 sm:gap-4 flex-shrink-0">
               {/* Blue Rounded Button with Yellow Heart Handshake Icon */}
               <Link
                 href="/get-involved"
-                className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 active:bg-blue-900 text-white font-bold text-xs sm:text-sm px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-md hover:shadow-lg transition transform active:scale-95"
+                className="inline-flex items-center gap-1.5 sm:gap-2 bg-blue-700 hover:bg-blue-800 active:bg-blue-900 text-white font-bold text-xs sm:text-sm px-3 sm:px-4 lg:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition transform active:scale-95"
               >
-                <HeartHandshake className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300 flex-shrink-0" />
+                <HeartHandshake className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 flex-shrink-0" />
                 <span className="whitespace-nowrap">Get Involved</span>
               </Link>
 
               {/* Hamburger Menu Toggle Icon */}
               <button
                 onClick={() => setDrawerOpen(true)}
-                className="p-2 sm:p-2.5 rounded-xl text-slate-800 hover:text-blue-700 hover:bg-slate-100 transition focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="p-2 sm:p-2.5 rounded-lg sm:rounded-xl border border-slate-200 text-slate-800 hover:text-blue-700 hover:bg-slate-50 transition focus:outline-none focus:ring-2 focus:ring-blue-600"
                 aria-label="Open Navigation Menu"
               >
-                <Menu className="w-6 h-6 sm:w-7 sm:h-7" />
+                <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
               </button>
             </div>
 
