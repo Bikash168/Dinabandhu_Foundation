@@ -89,16 +89,17 @@ export default function HomePage() {
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/15 p-8 rounded-3xl shadow-2xl text-center space-y-6">
                 
-                {/* Logo with pulsing glow */}
-                <div className="relative mx-auto w-32 h-32 flex items-center justify-center">
-                  <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse" />
-                  <div className="relative w-28 h-28 bg-white p-3 rounded-full shadow-2xl flex items-center justify-center">
+                {/* Logo with pulsing glow & SDG Wheel */}
+                <div className="relative mx-auto w-36 h-36 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/30 via-emerald-500/20 to-amber-500/30 rounded-full blur-xl animate-pulse" />
+                  <div className="relative w-32 h-32 bg-white p-1 rounded-full shadow-2xl flex items-center justify-center ring-4 ring-white/20">
                     <Image
                       src="/images/logo.png"
-                      alt="Dinabandhu Foundation Official Seal"
-                      width={100}
-                      height={100}
+                      alt="Dinabandhu Foundation Official Seal with SDG Wheel"
+                      width={124}
+                      height={124}
                       className="object-contain"
+                      priority
                     />
                   </div>
                 </div>
